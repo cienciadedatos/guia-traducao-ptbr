@@ -1,0 +1,88 @@
+# Orientações para tradução
+
+## Orientações gerais
+
+-   A tradução será feita seguindo a língua portuguesa utilizada no Brasil.
+
+-   As vezes a tradução literal não faz tanto sentido. É melhor facilitar o entendimento.
+
+-   Evite alterar o significado das frases.
+
+-   Ao traduzir um capítulo, não é necessário traduzir as imagens contidas no mesmo. Isso deverá ser feito por uma pessoa específica da equipe de tradução posteriormente.
+
+-   As palavras em inglês devem estar em itálico (envolvendo a palavra com `*`).
+
+-   Sobre números: no texto e código, manter o separador decimal como `.`, para facilitar o entendimento de que é assim que o R aceita.  **(CONFIRMAR)**
+
+
+## Gênero das palavras
+
+-   Evite definir um gênero para a pessoa que está lendo, usando uma linguagem mais neutra. Por exemplo: prefira usar "te orientar" ao invés de "orientá-lo". A idéia não é usar formas como "elu, elx", pois isso dificulta a leitura para as pessoas que utilizam leitores de tela. Muitas vezes reescrevendo a frase já é possível tirar a marcação de gênero. Mais exemplos:
+
+    -   e de seus colaboradores -\> e das pessoas que colaboram com você
+
+    -   para ajudá-lo. -\> para te ajudar.
+
+    -   você deve ser completamente preciso em suas instruções. -\> você deve ser escrever suas instruções de forma precisa.
+    
+
+## Orientações relacionadas à código
+
+-   Não alterar a indentação dos blocos de código.
+
+-   Não alterar as marcações com markdown.
+
+-   As bases de dados a serem usadas devem ser do [pacote dados](https://github.com/cienciadedatos/dados) (como citado no @sec-dados).
+
+-   Não traduzir os outputs do R, como mensagens de erro, warnings, resultados, entre outros. Caso seja necessário, execute o código e copie e cole o output do console atualizado.
+
+-   Não traduzir nome de funções e nome dos argumentos de funções.
+
+## Termos técnicos
+
+-   Ao traduzir um termo que não é tão comum em português, escreva a versão original também entre parênteses e em itálico. Exemplo: dados faltantes (*missing values*). Exemplos:
+
+| Termo em inglês | Exemplo traduzido                         |
+|-----------------|-------------------------------------------|
+| RStudio addins  | complementos do RStudio (*addins*)        |
+| aesthetic       | atributos estéticos (*aesthetic*)         |
+| missing values  | valores faltantes (*missing values*)      |
+| autocomplete    | recurso de autocompletar (*autocomplete*) |
+
+
+-   Ao citar um Painel do RStudio, deixar como "Painel tal (*nome do painel em inglês*)". Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (*Environment*).
+
+| Termo em inglês | Exemplo traduzido               |
+|-----------------|---------------------------------|
+| environment     | Painel ambiente (*Environment*) |
+| help            | Painel ajuda (*Help*)           |
+
+-   Para padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:
+
+| Termo em inglês                                         | Exemplo traduzido    |
+|----------------------------------|--------------------------------------|
+| aesthetics                                              | atributos estéticos  |
+| binwidth                                                | largura de intervalo |
+| code style                                              | estilo de código     |
+| command palette                                         | paleta de comando    |
+| labels                                                  | rótulos              |
+| mapping                                                 | mapeamento           |
+| geometrical object                                      | geometria            |
+| the geom                                                | a geometria          |
+| reproducible                                            | reprodutível         |
+| scaling                                                 | dimensionamento      |
+| the whole game (trata-se do nome de uma parte do livro) | visão geral          |
+| workflow                                                | fluxo de trabalho    |
+
+
+-   Existem termos que não traduzimos, mas devem ser deixados em itálico:
+
+| Termo em inglês | Exemplo traduzido |
+|-----------------|-------------------|
+| pipe            | o/um *pipe*       |
+| pipeline        | o/um *pipeline*   |
+| data frame      | o/um *data frame* |
+
+-   Preserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). **(COLOCAR EXEMPLOS)**
+
+

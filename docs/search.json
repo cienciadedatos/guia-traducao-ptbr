@@ -4,6 +4,41 @@
     "href": "index.html",
     "title": "Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro",
     "section": "",
-    "text": "Introdução\nBoas vindas!\nEste guia tem como objetivo descrever instruções para as pessoas que desejam contribuir com a tradução de conteúdos técnicos sobre R para Português Brasileiro (PT-BR).\nEste guia foi desenvolvido para ser utilizado no projeto de tradução colaborativa do livro R for Data Science para Português Brasileiro (PT-BR). Porém, esperamos que este guia seja útil para outros projetos de tradução de conteúdos técnicos sobre R para PT-BR.\nEste guia foi inspirado no Proyecto de traducción colaborativa de “R para Ciencia de Datos”, elaborado pela equipe que realizou a tradução da primeira edição do livro R for Data Science para Espanhol."
+    "text": "1 Introdução\nBoas vindas!\nEste guia tem como objetivo descrever instruções para as pessoas que desejam contribuir com a tradução de conteúdos técnicos sobre R para Português Brasileiro (PT-BR).\nEste guia está sendo desenvolvido para ser utilizado no projeto de tradução colaborativa do livro R for Data Science para Português Brasileiro (PT-BR). Porém, esperamos que este guia seja útil para outros projetos de tradução de conteúdos técnicos sobre R para PT-BR.\nEste guia foi inspirado no Proyecto de traducción colaborativa de “R para Ciencia de Datos”, elaborado pela equipe que realizou a tradução da primeira edição do livro R for Data Science para Espanhol.\nOutro guia importante para a tradução de conteúdos técnicos sobre R para PT-BR é o Guia de tradução do R Base."
+  },
+  {
+    "objectID": "dados.html",
+    "href": "dados.html",
+    "title": "2  Bases de dados",
+    "section": "",
+    "text": "Quando possível, no caso de encontrar códigos que utilizem alguma base de dados (por exemplo: mtcars), é interessante utilizar uma base de dados que esteja traduzida para o Português.\n\nO pacote dados foi desenvolvido para essa finalidade: traduzir bases de dados usadas em materiais técnicos em inglês para o Português.\nPortanto, sempre que possível, utilize bases de dados do pacote dados.\nCaso encontre algum erro ou problema com alguma base de dados do pacote dados, ou alguma base que está no livro e não foi traduzida, crie uma issue no repositório do pacote.\nPara instalar o pacote dados, utilize o código abaixo:\n\n# Versão disponível no CRAN\ninstall.packages(\"dados\")\n\n\n# Versão de desenvolvimento\ninstall.packages(\"remotes\")\nremotes::install_github(\"cienciadedatos/dados\")"
+  },
+  {
+    "objectID": "orientacoes.html#orientações-gerais",
+    "href": "orientacoes.html#orientações-gerais",
+    "title": "3  Orientações para tradução",
+    "section": "3.1 Orientações gerais",
+    "text": "3.1 Orientações gerais\n\nA tradução será feita seguindo a língua portuguesa utilizada no Brasil.\nAs vezes a tradução literal não faz tanto sentido. É melhor facilitar o entendimento.\nEvite alterar o significado das frases.\nAo traduzir um capítulo, não é necessário traduzir as imagens contidas no mesmo. Isso deverá ser feito por uma pessoa específica da equipe de tradução posteriormente.\nAs palavras em inglês devem estar em itálico (envolvendo a palavra com *).\nSobre números: no texto e código, manter o separador decimal como ., para facilitar o entendimento de que é assim que o R aceita. (CONFIRMAR)"
+  },
+  {
+    "objectID": "orientacoes.html#gênero-das-palavras",
+    "href": "orientacoes.html#gênero-das-palavras",
+    "title": "3  Orientações para tradução",
+    "section": "3.2 Gênero das palavras",
+    "text": "3.2 Gênero das palavras\n\nEvite definir um gênero para a pessoa que está lendo, usando uma linguagem mais neutra. Por exemplo: prefira usar “te orientar” ao invés de “orientá-lo”. A idéia não é usar formas como “elu, elx”, pois isso dificulta a leitura para as pessoas que utilizam leitores de tela. Muitas vezes reescrevendo a frase já é possível tirar a marcação de gênero. Mais exemplos:\n\ne de seus colaboradores -&gt; e das pessoas que colaboram com você\npara ajudá-lo. -&gt; para te ajudar.\nvocê deve ser completamente preciso em suas instruções. -&gt; você deve ser escrever suas instruções de forma precisa."
+  },
+  {
+    "objectID": "orientacoes.html#orientações-relacionadas-à-código",
+    "href": "orientacoes.html#orientações-relacionadas-à-código",
+    "title": "3  Orientações para tradução",
+    "section": "3.3 Orientações relacionadas à código",
+    "text": "3.3 Orientações relacionadas à código\n\nNão alterar a indentação dos blocos de código.\nNão alterar as marcações com markdown.\nAs bases de dados a serem usadas devem ser do pacote dados (como citado no Capítulo 2).\nNão traduzir os outputs do R, como mensagens de erro, warnings, resultados, entre outros. Caso seja necessário, execute o código e copie e cole o output do console atualizado.\nNão traduzir nome de funções e nome dos argumentos de funções."
+  },
+  {
+    "objectID": "orientacoes.html#termos-técnicos",
+    "href": "orientacoes.html#termos-técnicos",
+    "title": "3  Orientações para tradução",
+    "section": "3.4 Termos técnicos",
+    "text": "3.4 Termos técnicos\n\nAo traduzir um termo que não é tão comum em português, escreva a versão original também entre parênteses e em itálico. Exemplo: dados faltantes (missing values). Exemplos:\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\nRStudio addins\ncomplementos do RStudio (addins)\n\n\naesthetic\natributos estéticos (aesthetic)\n\n\nmissing values\nvalores faltantes (missing values)\n\n\nautocomplete\nrecurso de autocompletar (autocomplete)\n\n\n\n\nAo citar um Painel do RStudio, deixar como “Painel tal (nome do painel em inglês)”. Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (Environment).\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\nenvironment\nPainel ambiente (Environment)\n\n\nhelp\nPainel ajuda (Help)\n\n\n\n\nPara padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:\n\n\n\n\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\naesthetics\natributos estéticos\n\n\nbinwidth\nlargura de intervalo\n\n\ncode style\nestilo de código\n\n\ncommand palette\npaleta de comando\n\n\nlabels\nrótulos\n\n\nmapping\nmapeamento\n\n\ngeometrical object\ngeometria\n\n\nthe geom\na geometria\n\n\nreproducible\nreprodutível\n\n\nscaling\ndimensionamento\n\n\nthe whole game (trata-se do nome de uma parte do livro)\nvisão geral\n\n\nworkflow\nfluxo de trabalho\n\n\n\n\nExistem termos que não traduzimos, mas devem ser deixados em itálico:\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\npipe\no/um pipe\n\n\npipeline\no/um pipeline\n\n\ndata frame\no/um data frame\n\n\n\n\nPreserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). (COLOCAR EXEMPLOS)"
   }
 ]

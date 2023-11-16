@@ -1,0 +1,5 @@
+
+## Orientações relacionadas ao Git
+
+-   Só faça *commit* dos arquivos que você está trabalhando, relacionados ao capítulo que você está traduzindo.
+

@@ -1,0 +1,26 @@
+# Bases de dados {#sec-dados}
+
+Quando possível, no caso de encontrar códigos que utilizem alguma base de dados (por exemplo: `mtcars`), é interessante utilizar uma base de dados que esteja traduzida para o Português.
+
+<img src="https://github.com/cienciadedatos/dados/raw/master/man/figures/dados-hex.png" align="right" width="120px"/>
+
+O [pacote dados](https://github.com/cienciadedatos/dados) foi desenvolvido para essa finalidade: traduzir bases de dados usadas em materiais técnicos em inglês para o Português.
+
+Portanto, sempre que possível, utilize bases de dados do [pacote dados](https://github.com/cienciadedatos/dados).
+
+Caso encontre algum erro ou problema com alguma base de dados do [pacote dados](https://github.com/cienciadedatos/dados), ou alguma base que está no livro e não foi traduzida, crie uma [issue](https://github.com/cienciadedatos/dados/issues) no repositório do pacote.
+
+Para instalar o pacote dados, utilize o código abaixo:
+
+```{r}
+#| eval: false
+# Versão disponível no CRAN
+install.packages("dados")
+```
+
+```{r}
+#| eval: false
+# Versão de desenvolvimento
+install.packages("remotes")
+remotes::install_github("cienciadedatos/dados")
+```

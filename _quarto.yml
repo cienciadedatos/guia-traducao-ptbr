@@ -6,16 +6,22 @@ book:
   title: "Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro"
   author: "..."
   date: "2023-11-16"
+  repo-url: https://github.com/cienciadedatos/guia-traducao-ptbr
+  site-url: https://cienciadedatos.github.io/guia-traducao-ptbr/
+  repo-branch: main
+  repo-actions: [edit, issue]  
   chapters:
     - index.qmd
+    - dados.qmd
+    - orientacoes.qmd
+
 
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    code-link: true
 
 editor: visual
 
