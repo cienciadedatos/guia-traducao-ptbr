@@ -1,7 +1,6 @@
-
 # Git e GitHub
 
-Nas traduções, utilizamos o Git e o GitHub para o controle de versão dos arquivos.
+Em alguns projetos de tradução, é utilizado o Git e o GitHub para o controle de versão dos arquivos.
 
 Caso você não tenha familiaridade com o Git e o GitHub, recomendamos que você leia as instruções abaixo! Nesse guia, simplificamos alguns conceitos e passos, para que o foco seja deixar o seu computador pronto para contribuir com as traduções.
 
@@ -13,34 +12,50 @@ Caso tenha dificuldades em algum dos passos descritos, entre em contato com a pe
 
 O Git é um sistema de controle de versão distribuído, usado principalmente para o desenvolvimento de software.
 
-O GitHub é uma plataforma de hospedagem de código com controle de versão usando o Git. 
+O GitHub é uma plataforma de hospedagem de código com controle de versão usando o Git.
 
 ## Como instalar o Git?
 
 Para instalar o Git, siga as instruções do [site oficial](https://git-scm.com/downloads).
 
-
 ## Como criar uma conta no GitHub?
 
-TO DO
+Para criar uma conta no GitHub, siga as instruções do [site oficial](https://github.com/signup).
 
 ## Conceitos importantes
 
 <!-- Pensar: falta algum conceito? A ordem está fazendo sentido? -->
 
-- **Repositório**: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.
+-   **Repositório**: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.
 
-- **Branch**: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de `main`). No caso das traduções, cada capítulo do livro é traduzido uma branch.
+[![Repositório utilizado para a tradução em Português do livro R4DS: `cienciadedatos/pt-r4ds`.](images/repositorio-pt-r4ds.png){fig-alt="Captura de tela: Repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
 
-- **Commit**: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.
+-   **Commit**: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.
 
-- **Issue**: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso das traduções, cada capítulo do livro é uma issue, para acompanhar o andamento da tradução.
+[![Exemplo de um commit realizado no repositório `cienciadedatos/pt-r4ds`.](images/commit-pt-r4ds.png){fig-alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
 
-- **Projects**: TO DO
 
-- **Fork**: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.
+-   **Branch**: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de `main`). No caso das traduções, cada capítulo do livro é traduzido uma branch.
 
-- **Pull request**: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.
+[![Branches existentes no repositório `cienciadedatos/pt-r4ds`.](images/branches-pt-r4ds.png){fig-alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
 
-- **Merge**: TO DO 
 
+-   **Issue**: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso da tradução do livro R4DS, cada capítulo do livro tem uma issue, para acompanhar o andamento da tradução.
+
+[![Página com a lista de issues do repositório `cienciadedatos/pt-r4ds`.](images/issues-pt-r4ds.png){fig-alt="Captura de tela: Página das issues do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/issues)
+
+[![Página de uma issue específica do repositório `cienciadedatos/pt-r4ds`.](images/issues-pt-r4ds.png){fig-alt="Captura de tela: Página de uma issue específica do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/issues/36)
+
+-   **Projects**: é uma funcionalidade do GitHub para gerenciar projetos. No caso da tradução do livro R4DS, usamos para acompanhar o andamento da tradução.
+
+[![Página do projeto usado para acompanhar o andamento do projeto de tradução do livro R4DS.](images/projects-pt-r4ds.png){fig-alt="Captura de tela: Página do Projects do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/orgs/cienciadedatos/projects/2/views/1)
+
+-   **Fork**: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.
+
+[![Exemplo de um fork realizado a partir do repositório `cienciadedatos/pt-r4ds` para a conta de uma pessoa da equipe de tradução](images/exemplo-fork-pt-r4ds.png){fig-alt="Captura de tela: Fork realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/brunomioto/pt-r4ds)
+
+
+
+-   **Pull request**: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.
+
+[![Exemplo de um pull request realizado no repositório `cienciadedatos/pt-r4ds`.](images/exemplo-pull-request-pt-r4ds.png){fig-alt="Captura de tela: Pull request realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}]()

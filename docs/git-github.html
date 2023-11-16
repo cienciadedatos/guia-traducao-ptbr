@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Nas traduções, utilizamos o Git e o GitHub para o controle de versão dos arquivos.</p>
+<p>Em alguns projetos de tradução, é utilizado o Git e o GitHub para o controle de versão dos arquivos.</p>
 <p>Caso você não tenha familiaridade com o Git e o GitHub, recomendamos que você leia as instruções abaixo! Nesse guia, simplificamos alguns conceitos e passos, para que o foco seja deixar o seu computador pronto para contribuir com as traduções.</p>
 <p>Caso futuramente você queira se aprofundar no Git e GitHub, recomendamos que você leia o <a href="https://happygitwithr.com/">Happy Git with R</a>.</p>
 <p>Caso tenha dificuldades em algum dos passos descritos, entre em contato com a pessoa responsável pela equipe de tradução.</p>
@@ -177,21 +177,80 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="como-criar-uma-conta-no-github" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="como-criar-uma-conta-no-github"><span class="header-section-number">4.3</span> Como criar uma conta no GitHub?</h2>
-<p>TO DO</p>
+<p>Para criar uma conta no GitHub, siga as instruções do <a href="https://github.com/signup">site oficial</a>.</p>
 </section>
 <section id="conceitos-importantes" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="conceitos-importantes"><span class="header-section-number">4.4</span> Conceitos importantes</h2>
 <!-- Pensar: falta algum conceito? A ordem está fazendo sentido? -->
 <ul>
-<li><p><strong>Repositório</strong>: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.</p></li>
-<li><p><strong>Branch</strong>: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de <code>main</code>). No caso das traduções, cada capítulo do livro é traduzido uma branch.</p></li>
-<li><p><strong>Commit</strong>: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.</p></li>
-<li><p><strong>Issue</strong>: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso das traduções, cada capítulo do livro é uma issue, para acompanhar o andamento da tradução.</p></li>
-<li><p><strong>Projects</strong>: TO DO</p></li>
-<li><p><strong>Fork</strong>: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.</p></li>
-<li><p><strong>Pull request</strong>: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.</p></li>
-<li><p><strong>Merge</strong>: TO DO</p></li>
+<li><strong>Repositório</strong>: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/cienciadedatos/pt-r4ds"><img src="images/repositorio-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Repositório utilizado para a tradução em Português do livro R4DS: <code>cienciadedatos/pt-r4ds</code>.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Commit</strong>: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/cienciadedatos/pt-r4ds"><img src="images/commit-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Exemplo de um commit realizado no repositório <code>cienciadedatos/pt-r4ds</code>.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Branch</strong>: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de <code>main</code>). No caso das traduções, cada capítulo do livro é traduzido uma branch.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/cienciadedatos/pt-r4ds"><img src="images/branches-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Branches existentes no repositório <code>cienciadedatos/pt-r4ds</code>.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Issue</strong>: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso da tradução do livro R4DS, cada capítulo do livro tem uma issue, para acompanhar o andamento da tradução.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/cienciadedatos/pt-r4ds/issues"><img src="images/issues-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página das issues do repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Página com a lista de issues do repositório <code>cienciadedatos/pt-r4ds</code>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/cienciadedatos/pt-r4ds/issues/36"><img src="images/issues-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página de uma issue específica do repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Página de uma issue específica do repositório <code>cienciadedatos/pt-r4ds</code>.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Projects</strong>: é uma funcionalidade do GitHub para gerenciar projetos. No caso da tradução do livro R4DS, usamos para acompanhar o andamento da tradução.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/orgs/cienciadedatos/projects/2/views/1"><img src="images/projects-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página do Projects do repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Página do projeto usado para acompanhar o andamento do projeto de tradução do livro R4DS.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Fork</strong>: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://github.com/brunomioto/pt-r4ds"><img src="images/exemplo-fork-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Fork realizado no repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Exemplo de um fork realizado a partir do repositório <code>cienciadedatos/pt-r4ds</code> para a conta de uma pessoa da equipe de tradução</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Pull request</strong>: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href=""><img src="images/exemplo-pull-request-pt-r4ds.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Pull request realizado no repositório utilizado para a tradução em Português do livro R4DS"></a></p>
+<figcaption class="figure-caption">Exemplo de um pull request realizado no repositório <code>cienciadedatos/pt-r4ds</code>.</figcaption>
+</figure>
+</div>
 
 
 </section>
