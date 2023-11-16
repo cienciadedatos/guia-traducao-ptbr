@@ -1,0 +1,46 @@
+
+# Git e GitHub
+
+Nas traduções, utilizamos o Git e o GitHub para o controle de versão dos arquivos.
+
+Caso você não tenha familiaridade com o Git e o GitHub, recomendamos que você leia as instruções abaixo! Nesse guia, simplificamos alguns conceitos e passos, para que o foco seja deixar o seu computador pronto para contribuir com as traduções.
+
+Caso futuramente você queira se aprofundar no Git e GitHub, recomendamos que você leia o [Happy Git with R](https://happygitwithr.com/).
+
+Caso tenha dificuldades em algum dos passos descritos, entre em contato com a pessoa responsável pela equipe de tradução.
+
+## O que é Git e GitHub?
+
+O Git é um sistema de controle de versão distribuído, usado principalmente para o desenvolvimento de software.
+
+O GitHub é uma plataforma de hospedagem de código com controle de versão usando o Git. 
+
+## Como instalar o Git?
+
+Para instalar o Git, siga as instruções do [site oficial](https://git-scm.com/downloads).
+
+
+## Como criar uma conta no GitHub?
+
+TO DO
+
+## Conceitos importantes
+
+<!-- Pensar: falta algum conceito? A ordem está fazendo sentido? -->
+
+- **Repositório**: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.
+
+- **Branch**: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de `main`). No caso das traduções, cada capítulo do livro é traduzido uma branch.
+
+- **Commit**: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.
+
+- **Issue**: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso das traduções, cada capítulo do livro é uma issue, para acompanhar o andamento da tradução.
+
+- **Projects**: TO DO
+
+- **Fork**: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.
+
+- **Pull request**: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.
+
+- **Merge**: TO DO 
+

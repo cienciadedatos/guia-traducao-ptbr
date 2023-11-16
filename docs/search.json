@@ -40,5 +40,33 @@
     "title": "3  Orientações para tradução",
     "section": "3.4 Termos técnicos",
     "text": "3.4 Termos técnicos\n\nAo traduzir um termo que não é tão comum em português, escreva a versão original também entre parênteses e em itálico. Exemplo: dados faltantes (missing values). Exemplos:\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\nRStudio addins\ncomplementos do RStudio (addins)\n\n\naesthetic\natributos estéticos (aesthetic)\n\n\nmissing values\nvalores faltantes (missing values)\n\n\nautocomplete\nrecurso de autocompletar (autocomplete)\n\n\n\n\nAo citar um Painel do RStudio, deixar como “Painel tal (nome do painel em inglês)”. Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (Environment).\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\nenvironment\nPainel ambiente (Environment)\n\n\nhelp\nPainel ajuda (Help)\n\n\n\n\nPara padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:\n\n\n\n\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\naesthetics\natributos estéticos\n\n\nbinwidth\nlargura de intervalo\n\n\ncode style\nestilo de código\n\n\ncommand palette\npaleta de comando\n\n\nlabels\nrótulos\n\n\nmapping\nmapeamento\n\n\ngeometrical object\ngeometria\n\n\nthe geom\na geometria\n\n\nreproducible\nreprodutível\n\n\nscaling\ndimensionamento\n\n\nthe whole game (trata-se do nome de uma parte do livro)\nvisão geral\n\n\nworkflow\nfluxo de trabalho\n\n\n\n\nExistem termos que não traduzimos, mas devem ser deixados em itálico:\n\n\n\n\nTermo em inglês\nExemplo traduzido\n\n\n\n\npipe\no/um pipe\n\n\npipeline\no/um pipeline\n\n\ndata frame\no/um data frame\n\n\n\n\nPreserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). (COLOCAR EXEMPLOS)"
+  },
+  {
+    "objectID": "git-github.html#o-que-é-git-e-github",
+    "href": "git-github.html#o-que-é-git-e-github",
+    "title": "4  Git e GitHub",
+    "section": "4.1 O que é Git e GitHub?",
+    "text": "4.1 O que é Git e GitHub?\nO Git é um sistema de controle de versão distribuído, usado principalmente para o desenvolvimento de software.\nO GitHub é uma plataforma de hospedagem de código com controle de versão usando o Git."
+  },
+  {
+    "objectID": "git-github.html#como-instalar-o-git",
+    "href": "git-github.html#como-instalar-o-git",
+    "title": "4  Git e GitHub",
+    "section": "4.2 Como instalar o Git?",
+    "text": "4.2 Como instalar o Git?\nPara instalar o Git, siga as instruções do site oficial."
+  },
+  {
+    "objectID": "git-github.html#como-criar-uma-conta-no-github",
+    "href": "git-github.html#como-criar-uma-conta-no-github",
+    "title": "4  Git e GitHub",
+    "section": "4.3 Como criar uma conta no GitHub?",
+    "text": "4.3 Como criar uma conta no GitHub?\nTO DO"
+  },
+  {
+    "objectID": "git-github.html#conceitos-importantes",
+    "href": "git-github.html#conceitos-importantes",
+    "title": "4  Git e GitHub",
+    "section": "4.4 Conceitos importantes",
+    "text": "4.4 Conceitos importantes\n\n\nRepositório: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.\nBranch: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de main). No caso das traduções, cada capítulo do livro é traduzido uma branch.\nCommit: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.\nIssue: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso das traduções, cada capítulo do livro é uma issue, para acompanhar o andamento da tradução.\nProjects: TO DO\nFork: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.\nPull request: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.\nMerge: TO DO"
   }
 ]

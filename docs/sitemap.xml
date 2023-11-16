@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/index.html</loc>
-    <lastmod>2023-11-16T14:14:42.727Z</lastmod>
+    <lastmod>2023-11-16T14:28:45.890Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/dados.html</loc>
-    <lastmod>2023-11-16T14:14:42.735Z</lastmod>
+    <lastmod>2023-11-16T14:28:45.893Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/orientacoes.html</loc>
-    <lastmod>2023-11-16T14:14:42.736Z</lastmod>
+    <lastmod>2023-11-16T14:28:45.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/git-github.html</loc>
+    <lastmod>2023-11-16T14:28:45.903Z</lastmod>
   </url>
 </urlset>
