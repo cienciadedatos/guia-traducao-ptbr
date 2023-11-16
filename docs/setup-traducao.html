@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 3&nbsp; Orientações para tradução</title>
+<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 5&nbsp; Preparando o GitHub para realizar a tradução</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./git-github.html" rel="next">
-<link href="./dados.html" rel="prev">
+<link href="./ambiente-local-rstudio.html" rel="next">
+<link href="./git-github.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./orientacoes.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-github.html">Traduções realizadas no GitHub</a></li><li class="breadcrumb-item"><a href="./setup-traducao.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./orientacoes.html" class="sidebar-item-text sidebar-link active">
+  <a href="./orientacoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></span></a>
   </div>
 </li>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup-traducao.html" class="sidebar-item-text sidebar-link">
+  <a href="./setup-traducao.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></span></a>
   </div>
 </li>
@@ -176,19 +176,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#orientações-gerais" id="toc-orientações-gerais" class="nav-link active" data-scroll-target="#orientações-gerais"><span class="header-section-number">3.1</span> Orientações gerais</a></li>
-  <li><a href="#gênero-das-palavras" id="toc-gênero-das-palavras" class="nav-link" data-scroll-target="#gênero-das-palavras"><span class="header-section-number">3.2</span> Gênero das palavras</a></li>
-  <li><a href="#orientações-relacionadas-à-código" id="toc-orientações-relacionadas-à-código" class="nav-link" data-scroll-target="#orientações-relacionadas-à-código"><span class="header-section-number">3.3</span> Orientações relacionadas à código</a></li>
-  <li><a href="#termos-técnicos" id="toc-termos-técnicos" class="nav-link" data-scroll-target="#termos-técnicos"><span class="header-section-number">3.4</span> Termos técnicos</a></li>
+  <li><a href="#fazer-um-fork-do-repositório" id="toc-fazer-um-fork-do-repositório" class="nav-link active" data-scroll-target="#fazer-um-fork-do-repositório"><span class="header-section-number">5.1</span> Fazer um <em>fork</em> do repositório</a></li>
+  <li><a href="#escolhendo-o-ambiente-para-traduzir" id="toc-escolhendo-o-ambiente-para-traduzir" class="nav-link" data-scroll-target="#escolhendo-o-ambiente-para-traduzir"><span class="header-section-number">5.2</span> Escolhendo o ambiente para traduzir</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/orientacoes.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/setup-traducao.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></h1>
 </div>
 
 
@@ -203,183 +201,40 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="orientações-gerais" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="orientações-gerais"><span class="header-section-number">3.1</span> Orientações gerais</h2>
-<ul>
-<li><p>A tradução será feita seguindo a língua portuguesa utilizada no Brasil.</p></li>
-<li><p>As vezes a tradução literal não faz tanto sentido. É melhor facilitar o entendimento.</p></li>
-<li><p>Evite alterar o significado das frases.</p></li>
-<li><p>Ao traduzir um capítulo, não é necessário traduzir as imagens contidas no mesmo. Isso deverá ser feito por uma pessoa específica da equipe de tradução posteriormente.</p></li>
-<li><p>As palavras em inglês devem estar em itálico (envolvendo a palavra com <code>*</code>).</p></li>
-<li><p>Sobre números: no texto e código, manter o separador decimal como <code>.</code>, para facilitar o entendimento de que é assim que o R aceita. <strong>(CONFIRMAR)</strong></p></li>
-</ul>
+<p>Nesta seção, apresentaremos os passos necessários para realizar a tradução de um capítulo.</p>
+<p>É importante citar que, neste ponto, é importante que você já tenha se apresentado para a pessoa responsável pela equipe de tradução e esteja em contato com a equipe!</p>
+<p>Neste caso, utilizaremos como exemplo a tradução do livro R4DS, porém esperamos que este guia seja útil para outras traduções futuras.</p>
+<p>É importante que você faça login na sua conta do GitHub para realizar os próximos passos.</p>
+<section id="fazer-um-fork-do-repositório" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="fazer-um-fork-do-repositório"><span class="header-section-number">5.1</span> Fazer um <em>fork</em> do repositório</h2>
+<p>O primeiro passo a ser realizado é criar um fork do repositório do livro que você deseja traduzir, para que você possa realizar as alterações necessárias na sua conta, e posteriormente enviar sua contribuição.</p>
+<p>Caso você não saiba o que é um <em>fork</em>, recomendo voltar na <a href="git-github.html#sec-git-github-conceitos"><span>Seção&nbsp;4.4</span></a> e conferir a lista de conceitos importantes.</p>
+<p>Para realizar o <em>fork</em>, acesse o repositório do livro que você deseja traduzir e clicar no botão <code>Fork</code>:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/botao-criar-fork.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Exemplo do botão para criar um fork"></p>
+<figcaption class="figure-caption">Exemplo do botão para criar um fork.</figcaption>
+</figure>
+</div>
+<p>Então, você será redirecionado para uma pagina para você confirmar a criação do seu fork. É importante que em “Owner” esteja selecionada a sua conta do GitHub, e que a opção “Copy the <code>main</code> branch only” <strong>não</strong> esteja selecionada:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/confirmacao-criacao-fork.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Exemplo da página para confirmar a criação do fork"></p>
+<figcaption class="figure-caption">Exemplo da página para confirmar a criação do fork.</figcaption>
+</figure>
+</div>
+<p>Então, você será redirecionado para a página do seu fork, que estará localizado na sua conta do GitHub:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/fork-criado.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página do fork criado no exemplo"></p>
+<figcaption class="figure-caption">Página do fork criado no exemplo.</figcaption>
+</figure>
+</div>
 </section>
-<section id="gênero-das-palavras" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="gênero-das-palavras"><span class="header-section-number">3.2</span> Gênero das palavras</h2>
-<ul>
-<li><p>Evite definir um gênero para a pessoa que está lendo, usando uma linguagem mais neutra. Por exemplo: prefira usar “te orientar” ao invés de “orientá-lo”. A idéia não é usar formas como “elu, elx”, pois isso dificulta a leitura para as pessoas que utilizam leitores de tela. Muitas vezes reescrevendo a frase já é possível tirar a marcação de gênero. Mais exemplos:</p>
-<ul>
-<li><p>e de seus colaboradores -&gt; e das pessoas que colaboram com você</p></li>
-<li><p>para ajudá-lo. -&gt; para te ajudar.</p></li>
-<li><p>você deve ser completamente preciso em suas instruções. -&gt; você deve ser escrever suas instruções de forma precisa.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="orientações-relacionadas-à-código" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="orientações-relacionadas-à-código"><span class="header-section-number">3.3</span> Orientações relacionadas à código</h2>
-<ul>
-<li><p>Não alterar a indentação dos blocos de código.</p></li>
-<li><p>Não alterar as marcações com markdown.</p></li>
-<li><p>As bases de dados a serem usadas devem ser do <a href="https://github.com/cienciadedatos/dados">pacote dados</a> (como citado no <a href="dados.html"><span>Capítulo&nbsp;2</span></a>).</p></li>
-<li><p>Não traduzir os outputs do R, como mensagens de erro, warnings, resultados, entre outros. Caso seja necessário, execute o código e copie e cole o output do console atualizado.</p></li>
-<li><p>Não traduzir nome de funções e nome dos argumentos de funções.</p></li>
-</ul>
-</section>
-<section id="termos-técnicos" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="termos-técnicos"><span class="header-section-number">3.4</span> Termos técnicos</h2>
-<ul>
-<li>Ao traduzir um termo que não é tão comum em português, escreva a versão original também entre parênteses e em itálico. Exemplo: dados faltantes (<em>missing values</em>). Exemplos:</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RStudio addins</td>
-<td>complementos do RStudio (<em>addins</em>)</td>
-</tr>
-<tr class="even">
-<td>aesthetic</td>
-<td>atributos estéticos (<em>aesthetic</em>)</td>
-</tr>
-<tr class="odd">
-<td>missing values</td>
-<td>valores faltantes (<em>missing values</em>)</td>
-</tr>
-<tr class="even">
-<td>autocomplete</td>
-<td>recurso de autocompletar (<em>autocomplete</em>)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Ao citar um Painel do RStudio, deixar como “Painel tal (<em>nome do painel em inglês</em>)”. Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (<em>Environment</em>).</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>environment</td>
-<td>Painel ambiente (<em>Environment</em>)</td>
-</tr>
-<tr class="even">
-<td>help</td>
-<td>Painel ajuda (<em>Help</em>)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Para padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:</li>
-</ul>
-<table class="table">
-<colgroup>
-<col style="width: 72%">
-<col style="width: 27%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>aesthetics</td>
-<td>atributos estéticos</td>
-</tr>
-<tr class="even">
-<td>binwidth</td>
-<td>largura de intervalo</td>
-</tr>
-<tr class="odd">
-<td>code style</td>
-<td>estilo de código</td>
-</tr>
-<tr class="even">
-<td>command palette</td>
-<td>paleta de comando</td>
-</tr>
-<tr class="odd">
-<td>labels</td>
-<td>rótulos</td>
-</tr>
-<tr class="even">
-<td>mapping</td>
-<td>mapeamento</td>
-</tr>
-<tr class="odd">
-<td>geometrical object</td>
-<td>geometria</td>
-</tr>
-<tr class="even">
-<td>the geom</td>
-<td>a geometria</td>
-</tr>
-<tr class="odd">
-<td>reproducible</td>
-<td>reprodutível</td>
-</tr>
-<tr class="even">
-<td>scaling</td>
-<td>dimensionamento</td>
-</tr>
-<tr class="odd">
-<td>the whole game (trata-se do nome de uma parte do livro)</td>
-<td>visão geral</td>
-</tr>
-<tr class="even">
-<td>workflow</td>
-<td>fluxo de trabalho</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Existem termos que não traduzimos, mas devem ser deixados em itálico:</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>pipe</td>
-<td>o/um <em>pipe</em></td>
-</tr>
-<tr class="even">
-<td>pipeline</td>
-<td>o/um <em>pipeline</em></td>
-</tr>
-<tr class="odd">
-<td>data frame</td>
-<td>o/um <em>data frame</em></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Preserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). <strong>(COLOCAR EXEMPLOS)</strong></li>
-</ul>
+<section id="escolhendo-o-ambiente-para-traduzir" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="escolhendo-o-ambiente-para-traduzir"><span class="header-section-number">5.2</span> Escolhendo o ambiente para traduzir</h2>
+<p>Após criar o <em>fork</em>, você pode realizar a tradução no seu computador (localmente) ou utilizando o GitHub Codespaces (online).</p>
+<p>No caso da tradução no seu computador (localmente), vamos apresentar exemplos utilizando a IDE RStudio. Caso você não use o RStudio e prefira utilizar outro editor de texto, você pode seguir os passos gerais no seu editor preferido.</p>
 
 
 </section>
@@ -620,13 +475,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./dados.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bases de dados</span></span>
+      <a href="./git-github.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos importantes sobre Git e GitHub</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./git-github.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos importantes sobre Git e GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ambiente-local-rstudio.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

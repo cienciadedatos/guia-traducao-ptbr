@@ -1,4 +1,4 @@
-# Git e GitHub
+# Conceitos importantes sobre Git e GitHub {#sec-git-github}
 
 Em alguns projetos de tradução, é utilizado o Git e o GitHub para o controle de versão dos arquivos.
 
@@ -22,7 +22,7 @@ Para instalar o Git, siga as instruções do [site oficial](https://git-scm.com/
 
 Para criar uma conta no GitHub, siga as instruções do [site oficial](https://github.com/signup).
 
-## Conceitos importantes
+## Conceitos importantes {#sec-git-github-conceitos}
 
 <!-- Pensar: falta algum conceito? A ordem está fazendo sentido? -->
 
@@ -53,8 +53,6 @@ Para criar uma conta no GitHub, siga as instruções do [site oficial](https://g
 -   **Fork**: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.
 
 [![Exemplo de um fork realizado a partir do repositório `cienciadedatos/pt-r4ds` para a conta de uma pessoa da equipe de tradução](images/exemplo-fork-pt-r4ds.png){fig-alt="Captura de tela: Fork realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/brunomioto/pt-r4ds)
-
-
 
 -   **Pull request**: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.
 

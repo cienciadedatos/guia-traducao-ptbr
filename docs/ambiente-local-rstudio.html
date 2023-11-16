@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.450">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 3&nbsp; Orientações para tradução</title>
+<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 6&nbsp; Configurando o ambiente local com o RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,8 +17,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
@@ -30,8 +60,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./git-github.html" rel="next">
-<link href="./dados.html" rel="prev">
+<link href="./weblate.html" rel="next">
+<link href="./setup-traducao.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -40,8 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
@@ -61,33 +90,24 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Procurar"
   }
 }</script>
-
-
 </head>
-
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./orientacoes.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-github.html">Traduções realizadas no GitHub</a></li><li class="breadcrumb-item"><a href="./ambiente-local-rstudio.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro</a> 
         <div class="sidebar-tools-main">
@@ -102,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
@@ -116,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./orientacoes.html" class="sidebar-item-text sidebar-link active">
+  <a href="./orientacoes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></span></a>
   </div>
 </li>
@@ -128,8 +148,8 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git-github.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos importantes sobre Git e GitHub</span></span></a>
@@ -143,12 +163,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ambiente-local-rstudio.html" class="sidebar-item-text sidebar-link">
+  <a href="./ambiente-local-rstudio.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
@@ -157,38 +177,31 @@ ul.task-list li input[type="checkbox"] {
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./weblate.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Weblate</span></span></a>
   </div>
 </li>
       </ul>
-  </li>
+</li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Índice</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
-  <li><a href="#orientações-gerais" id="toc-orientações-gerais" class="nav-link active" data-scroll-target="#orientações-gerais"><span class="header-section-number">3.1</span> Orientações gerais</a></li>
-  <li><a href="#gênero-das-palavras" id="toc-gênero-das-palavras" class="nav-link" data-scroll-target="#gênero-das-palavras"><span class="header-section-number">3.2</span> Gênero das palavras</a></li>
-  <li><a href="#orientações-relacionadas-à-código" id="toc-orientações-relacionadas-à-código" class="nav-link" data-scroll-target="#orientações-relacionadas-à-código"><span class="header-section-number">3.3</span> Orientações relacionadas à código</a></li>
-  <li><a href="#termos-técnicos" id="toc-termos-técnicos" class="nav-link" data-scroll-target="#termos-técnicos"><span class="header-section-number">3.4</span> Termos técnicos</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/orientacoes.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
+<li><a href="#conectando-o-rstudio-e-o-github" id="toc-conectando-o-rstudio-e-o-github" class="nav-link active" data-scroll-target="#conectando-o-rstudio-e-o-github"><span class="header-section-number">6.1</span> Conectando o RStudio e o GitHub</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/ambiente-local-rstudio.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">
+<span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span>
+</h1>
 </div>
 
 
@@ -201,191 +214,59 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-</header>
-
-<section id="orientações-gerais" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="orientações-gerais"><span class="header-section-number">3.1</span> Orientações gerais</h2>
-<ul>
-<li><p>A tradução será feita seguindo a língua portuguesa utilizada no Brasil.</p></li>
-<li><p>As vezes a tradução literal não faz tanto sentido. É melhor facilitar o entendimento.</p></li>
-<li><p>Evite alterar o significado das frases.</p></li>
-<li><p>Ao traduzir um capítulo, não é necessário traduzir as imagens contidas no mesmo. Isso deverá ser feito por uma pessoa específica da equipe de tradução posteriormente.</p></li>
-<li><p>As palavras em inglês devem estar em itálico (envolvendo a palavra com <code>*</code>).</p></li>
-<li><p>Sobre números: no texto e código, manter o separador decimal como <code>.</code>, para facilitar o entendimento de que é assim que o R aceita. <strong>(CONFIRMAR)</strong></p></li>
-</ul>
-</section>
-<section id="gênero-das-palavras" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="gênero-das-palavras"><span class="header-section-number">3.2</span> Gênero das palavras</h2>
-<ul>
-<li><p>Evite definir um gênero para a pessoa que está lendo, usando uma linguagem mais neutra. Por exemplo: prefira usar “te orientar” ao invés de “orientá-lo”. A idéia não é usar formas como “elu, elx”, pois isso dificulta a leitura para as pessoas que utilizam leitores de tela. Muitas vezes reescrevendo a frase já é possível tirar a marcação de gênero. Mais exemplos:</p>
-<ul>
-<li><p>e de seus colaboradores -&gt; e das pessoas que colaboram com você</p></li>
-<li><p>para ajudá-lo. -&gt; para te ajudar.</p></li>
-<li><p>você deve ser completamente preciso em suas instruções. -&gt; você deve ser escrever suas instruções de forma precisa.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="orientações-relacionadas-à-código" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="orientações-relacionadas-à-código"><span class="header-section-number">3.3</span> Orientações relacionadas à código</h2>
-<ul>
-<li><p>Não alterar a indentação dos blocos de código.</p></li>
-<li><p>Não alterar as marcações com markdown.</p></li>
-<li><p>As bases de dados a serem usadas devem ser do <a href="https://github.com/cienciadedatos/dados">pacote dados</a> (como citado no <a href="dados.html"><span>Capítulo&nbsp;2</span></a>).</p></li>
-<li><p>Não traduzir os outputs do R, como mensagens de erro, warnings, resultados, entre outros. Caso seja necessário, execute o código e copie e cole o output do console atualizado.</p></li>
-<li><p>Não traduzir nome de funções e nome dos argumentos de funções.</p></li>
-</ul>
-</section>
-<section id="termos-técnicos" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="termos-técnicos"><span class="header-section-number">3.4</span> Termos técnicos</h2>
-<ul>
-<li>Ao traduzir um termo que não é tão comum em português, escreva a versão original também entre parênteses e em itálico. Exemplo: dados faltantes (<em>missing values</em>). Exemplos:</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RStudio addins</td>
-<td>complementos do RStudio (<em>addins</em>)</td>
-</tr>
-<tr class="even">
-<td>aesthetic</td>
-<td>atributos estéticos (<em>aesthetic</em>)</td>
-</tr>
-<tr class="odd">
-<td>missing values</td>
-<td>valores faltantes (<em>missing values</em>)</td>
-</tr>
-<tr class="even">
-<td>autocomplete</td>
-<td>recurso de autocompletar (<em>autocomplete</em>)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Ao citar um Painel do RStudio, deixar como “Painel tal (<em>nome do painel em inglês</em>)”. Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (<em>Environment</em>).</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>environment</td>
-<td>Painel ambiente (<em>Environment</em>)</td>
-</tr>
-<tr class="even">
-<td>help</td>
-<td>Painel ajuda (<em>Help</em>)</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Para padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:</li>
-</ul>
-<table class="table">
-<colgroup>
-<col style="width: 72%">
-<col style="width: 27%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>aesthetics</td>
-<td>atributos estéticos</td>
-</tr>
-<tr class="even">
-<td>binwidth</td>
-<td>largura de intervalo</td>
-</tr>
-<tr class="odd">
-<td>code style</td>
-<td>estilo de código</td>
-</tr>
-<tr class="even">
-<td>command palette</td>
-<td>paleta de comando</td>
-</tr>
-<tr class="odd">
-<td>labels</td>
-<td>rótulos</td>
-</tr>
-<tr class="even">
-<td>mapping</td>
-<td>mapeamento</td>
-</tr>
-<tr class="odd">
-<td>geometrical object</td>
-<td>geometria</td>
-</tr>
-<tr class="even">
-<td>the geom</td>
-<td>a geometria</td>
-</tr>
-<tr class="odd">
-<td>reproducible</td>
-<td>reprodutível</td>
-</tr>
-<tr class="even">
-<td>scaling</td>
-<td>dimensionamento</td>
-</tr>
-<tr class="odd">
-<td>the whole game (trata-se do nome de uma parte do livro)</td>
-<td>visão geral</td>
-</tr>
-<tr class="even">
-<td>workflow</td>
-<td>fluxo de trabalho</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Existem termos que não traduzimos, mas devem ser deixados em itálico:</li>
-</ul>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Termo em inglês</th>
-<th>Exemplo traduzido</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>pipe</td>
-<td>o/um <em>pipe</em></td>
-</tr>
-<tr class="even">
-<td>pipeline</td>
-<td>o/um <em>pipeline</em></td>
-</tr>
-<tr class="odd">
-<td>data frame</td>
-<td>o/um <em>data frame</em></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>Preserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). <strong>(COLOCAR EXEMPLOS)</strong></li>
-</ul>
+</header><p>Para seguir o passo a passo utilizando o RStudio, é necessário que você tenha instalado o R e o RStudio Desktop no seu computador. Caso você não tenha instalado, você pode fazer download em: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
+<section id="conectando-o-rstudio-e-o-github" class="level2" data-number="6.1"><h2 data-number="6.1" class="anchored" data-anchor-id="conectando-o-rstudio-e-o-github">
+<span class="header-section-number">6.1</span> Conectando o RStudio e o GitHub</h2>
+<p>O pacote usethis será muito útil nesta etapa. Portanto, instale-o e carregue-o:</p>
+<div class="cell">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://usethis.r-lib.org">usethis</a></span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Se apresente para o Git, utilizando a função <code><a href="https://usethis.r-lib.org/reference/use_git_config.html">use_git_config()</a></code>:</p>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_git_config.html">use_git_config</a></span><span class="op">(</span></span>
+<span>  <span class="co"># seu nome</span></span>
+<span>  user.name <span class="op">=</span> <span class="st">"Carol Denvers"</span>,</span>
+<span>  <span class="co"># o email que você usa na sua conta do GitHub</span></span>
+<span>  user.email <span class="op">=</span> <span class="st">"awesomecaptainmarvel@gmail.com"</span></span>
+<span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Crie um GitHub PAT Token (similar à uma senha) utilizando a função <code><a href="https://usethis.r-lib.org/reference/github-token.html">create_github_token()</a></code>.</p>
+<div class="cell">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/github-token.html">create_github_token</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Nessa etapa, uma janela do navegador será aberta para você fazer login na sua conta do GitHub e criar o token. Não é necessário alterar as configurações, mas recomendamos nomear o token, e escolher um tempo para que ele expire.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/create-github-token.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página para criar um GitHub Token"></p>
+<figcaption class="figure-caption">Página para criar um GitHub Token</figcaption></figure>
+</div>
+<p>Clique em “Generate Token” e copie o token gerado:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="images/copiar-token-gerado.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página que mostra o token gerado"></p>
+<figcaption class="figure-caption">Página que mostra o token gerado</figcaption></figure>
+</div>
+<p>Volte para o RStudio. Utilize a função <code><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds::gitcreds_set()</a></code> para armazenar o seu novo token, colando o token gerado quando for solicitado.</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gitcreds</span><span class="fu">::</span><span class="fu"><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds_set</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Reinicie a sua sessão do RStudio (o atalho <code>CTRL + SHIFT + F10</code> pode ser útil, ou clique no menu superior em: Session -&gt; Restart R).</p>
+<p>Utilize a função <code><a href="https://usethis.r-lib.org/reference/git_sitrep.html">usethis::git_sitrep()</a></code> para verificar se o seu nome, email e PAT estão configurados corretamente.</p>
+<div class="cell">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/git_sitrep.html">git_sitrep</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Git config (global)</span></span>
+<span><span class="co">#&gt; ● Name: 'SEU NOME DEVE APARECER AQUI'</span></span>
+<span><span class="co">#&gt; ● Email: 'SEU EMAIL DEVE APARECER AQUI'</span></span>
+<span><span class="co">#&gt; GitHub</span></span>
+<span><span class="co">#&gt; ● Default GitHub host: 'https://github.com'</span></span>
+<span><span class="co">#&gt; ● Personal access token for 'https://github.com': '&lt;discovered&gt;'</span></span>
+<span><span class="co">#&gt; ● GitHub user: 'SEU NOME DE USUÁRIO(A) DEVE APARECER AQUI'</span></span>
+<span><span class="co">#&gt; ● Token scopes: 'gist, repo, user, workflow'</span></span>
+<span><span class="co">#&gt; ● Email(s): 'SEU EMAIL DEVE APARECER AQUI'</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>O mais importante é verificar se aparece: <code>Personal access token for 'https://github.com': '&lt;discovered&gt;'</code>. Caso não esteja, verifique se você copiou o token corretamente, e se você reiniciou a sessão do RStudio.</p>
 
 
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -617,16 +498,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./dados.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bases de dados</span></span>
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./setup-traducao.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./git-github.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos importantes sobre Git e GitHub</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./weblate.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Weblate</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

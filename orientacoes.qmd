@@ -12,8 +12,7 @@
 
 -   As palavras em inglês devem estar em itálico (envolvendo a palavra com `*`).
 
--   Sobre números: no texto e código, manter o separador decimal como `.`, para facilitar o entendimento de que é assim que o R aceita.  **(CONFIRMAR)**
-
+-   Sobre números: no texto e código, manter o separador decimal como `.`, para facilitar o entendimento de que é assim que o R aceita. **(CONFIRMAR)**
 
 ## Gênero das palavras
 
@@ -24,7 +23,6 @@
     -   para ajudá-lo. -\> para te ajudar.
 
     -   você deve ser completamente preciso em suas instruções. -\> você deve ser escrever suas instruções de forma precisa.
-    
 
 ## Orientações relacionadas à código
 
@@ -49,7 +47,6 @@
 | missing values  | valores faltantes (*missing values*)      |
 | autocomplete    | recurso de autocompletar (*autocomplete*) |
 
-
 -   Ao citar um Painel do RStudio, deixar como "Painel tal (*nome do painel em inglês*)". Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (*Environment*).
 
 | Termo em inglês | Exemplo traduzido               |
@@ -60,7 +57,7 @@
 -   Para padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:
 
 | Termo em inglês                                         | Exemplo traduzido    |
-|----------------------------------|--------------------------------------|
+|---------------------------------------------------------|----------------------|
 | aesthetics                                              | atributos estéticos  |
 | binwidth                                                | largura de intervalo |
 | code style                                              | estilo de código     |
@@ -74,7 +71,6 @@
 | the whole game (trata-se do nome de uma parte do livro) | visão geral          |
 | workflow                                                | fluxo de trabalho    |
 
-
 -   Existem termos que não traduzimos, mas devem ser deixados em itálico:
 
 | Termo em inglês | Exemplo traduzido |
@@ -84,5 +80,3 @@
 | data frame      | o/um *data frame* |
 
 -   Preserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). **(COLOCAR EXEMPLOS)**
-
-

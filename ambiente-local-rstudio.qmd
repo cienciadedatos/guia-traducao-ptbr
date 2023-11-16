@@ -1,0 +1,79 @@
+# Configurando o ambiente local com o RStudio
+
+Para seguir o passo a passo utilizando o RStudio, é necessário que você tenha instalado o R e o RStudio Desktop no seu computador. Caso você não tenha instalado, você pode fazer download em: <https://posit.co/download/rstudio-desktop/>
+
+
+## Conectando o RStudio e o GitHub
+
+O pacote usethis será muito útil nesta etapa. Portanto, instale-o e carregue-o:
+
+```{r}
+#| eval: false
+#| include: true
+install.packages("usethis")
+library(usethis)
+```
+
+Se apresente para o Git, utilizando a função `use_git_config()`:
+
+```{r}
+#| eval: false
+#| include: true
+usethis::use_git_config(
+  # seu nome
+  user.name = "Carol Denvers",
+  # o email que você usa na sua conta do GitHub
+  user.email = "awesomecaptainmarvel@gmail.com"
+)
+```
+
+
+Crie um GitHub PAT Token (similar à uma senha) utilizando a função `create_github_token()`. 
+
+```{r}
+#| eval: false
+#| #| include: true
+usethis::create_github_token()
+```
+
+Nessa etapa, uma janela do navegador será aberta para você fazer login na sua conta do GitHub e criar o token. Não é necessário alterar as configurações, mas recomendamos nomear o token, e escolher um tempo para que ele expire. 
+
+
+![Página para criar um GitHub Token](images/create-github-token.png){fig-alt="Captura de tela: Página para criar um GitHub Token" fig-align="center" width="95%"}
+
+
+
+
+Clique em "Generate Token" e copie o token gerado:
+
+![Página que mostra o token gerado](images/copiar-token-gerado.png){fig-alt="Captura de tela: Página que mostra o token gerado" fig-align="center" width="95%"}
+
+Volte para o RStudio. Utilize a função `gitcreds::gitcreds_set()` para armazenar o seu novo token, colando o token gerado quando for solicitado.
+
+
+```{r}
+#| eval: false
+#| #| include: true
+gitcreds::gitcreds_set()
+```
+
+Reinicie a sua sessão do RStudio (o atalho `CTRL + SHIFT + F10` pode ser útil, ou clique no menu superior em: Session -> Restart R).
+
+Utilize a função `usethis::git_sitrep()` para verificar se o seu nome, email e PAT estão configurados corretamente. 
+
+
+```{r}
+#| eval: false
+usethis::git_sitrep()
+#> Git config (global)
+#> ● Name: 'SEU NOME DEVE APARECER AQUI'
+#> ● Email: 'SEU EMAIL DEVE APARECER AQUI'
+#> GitHub
+#> ● Default GitHub host: 'https://github.com'
+#> ● Personal access token for 'https://github.com': '<discovered>'
+#> ● GitHub user: 'SEU NOME DE USUÁRIO(A) DEVE APARECER AQUI'
+#> ● Token scopes: 'gist, repo, user, workflow'
+#> ● Email(s): 'SEU EMAIL DEVE APARECER AQUI'
+```
+
+O mais importante é verificar se aparece: `Personal access token for 'https://github.com': '<discovered>'`. Caso não esteja, verifique se você copiou o token corretamente, e se você reiniciou a sessão do RStudio.

@@ -4,7 +4,9 @@ project:
 
 book:
   title: "Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro"
-  author: "..."
+  author: 
+    - "Beatriz Milz"
+    - "..."
   date: "2023-11-16"
   repo-url: https://github.com/cienciadedatos/guia-traducao-ptbr
   site-url: https://cienciadedatos.github.io/guia-traducao-ptbr/
@@ -14,8 +16,14 @@ book:
     - index.qmd
     - dados.qmd
     - orientacoes.qmd
-    - git-github.qmd
-
+    - part: "Traduções realizadas no GitHub"
+      chapters:  
+      - git-github.qmd
+      - setup-traducao.qmd
+      - ambiente-local-rstudio.qmd
+    - part: "Traduções realizadas no Weblate"
+      chapters:  
+      - weblate.qmd
 
 bibliography: references.bib
 
@@ -27,3 +35,4 @@ format:
 editor: visual
 
 lang: pt
+language: "custom-pt-br.yml"

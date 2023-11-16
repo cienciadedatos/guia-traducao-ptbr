@@ -1,0 +1,7 @@
+# Weblate
+
+O Weblate é a plataforma que é utilizada na [tradução dos outputs (como mensagens de erro, warnings, etc) do R base](https://contributor.r-project.org/translations/Conventions_for_Languages/Brazilian%E2%80%90Portugese-specific-translations.html).
+
+Ele é uma plataforma de tradução online, que permite que várias pessoas trabalhem em conjunto na tradução de um projeto.
+
+Futuramente, adicionaremos conteúdo sobre como contribuir com a tradução do R base utilizando o Weblate.
