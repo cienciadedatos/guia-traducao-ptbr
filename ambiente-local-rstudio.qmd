@@ -2,7 +2,6 @@
 
 Para seguir o passo a passo utilizando o RStudio, é necessário que você tenha instalado o R e o RStudio Desktop no seu computador. Caso você não tenha instalado, você pode fazer download em: <https://posit.co/download/rstudio-desktop/>
 
-
 ## Conectando o RStudio e o GitHub
 
 O pacote usethis será muito útil nesta etapa. Portanto, instale-o e carregue-o:
@@ -27,8 +26,7 @@ usethis::use_git_config(
 )
 ```
 
-
-Crie um GitHub PAT Token (similar à uma senha) utilizando a função `create_github_token()`. 
+Crie um GitHub PAT Token (similar à uma senha) utilizando a função `create_github_token()`.
 
 ```{r}
 #| eval: false
@@ -36,13 +34,9 @@ Crie um GitHub PAT Token (similar à uma senha) utilizando a função `create_gi
 usethis::create_github_token()
 ```
 
-Nessa etapa, uma janela do navegador será aberta para você fazer login na sua conta do GitHub e criar o token. Não é necessário alterar as configurações, mas recomendamos nomear o token, e escolher um tempo para que ele expire. 
-
+Nessa etapa, uma janela do navegador será aberta para você fazer login na sua conta do GitHub e criar o token. Não é necessário alterar as configurações, mas recomendamos nomear o token, e escolher um tempo para que ele expire.
 
 ![Página para criar um GitHub Token](images/create-github-token.png){fig-alt="Captura de tela: Página para criar um GitHub Token" fig-align="center" width="95%"}
-
-
-
 
 Clique em "Generate Token" e copie o token gerado:
 
@@ -50,17 +44,15 @@ Clique em "Generate Token" e copie o token gerado:
 
 Volte para o RStudio. Utilize a função `gitcreds::gitcreds_set()` para armazenar o seu novo token, colando o token gerado quando for solicitado.
 
-
 ```{r}
 #| eval: false
 #| #| include: true
 gitcreds::gitcreds_set()
 ```
 
-Reinicie a sua sessão do RStudio (o atalho `CTRL + SHIFT + F10` pode ser útil, ou clique no menu superior em: Session -> Restart R).
+Reinicie a sua sessão do RStudio (o atalho `CTRL + SHIFT + F10` pode ser útil, ou clique no menu superior em: Session -\> Restart R).
 
-Utilize a função `usethis::git_sitrep()` para verificar se o seu nome, email e PAT estão configurados corretamente. 
-
+Utilize a função `usethis::git_sitrep()` para verificar se o seu nome, email e PAT estão configurados corretamente.
 
 ```{r}
 #| eval: false

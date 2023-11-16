@@ -28,23 +28,21 @@ Para criar uma conta no GitHub, siga as instruções do [site oficial](https://g
 
 -   **Repositório**: é um diretório onde os arquivos do projeto ficam armazenados. No caso das traduções, o repositório contém os códigos do livro que está sendo traduzido.
 
-[![Repositório utilizado para a tradução em Português do livro R4DS: `cienciadedatos/pt-r4ds`.](images/repositorio-pt-r4ds.png){fig-alt="Captura de tela: Repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
+[![Repositório utilizado para a tradução em Português do livro R4DS: cienciadedatos/pt-r4ds.](images/repositorio-pt-r4ds.png){fig-alt="Captura de tela: Repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
 
 -   **Commit**: é a forma de salvar uma alteração feita no código. No caso das traduções, um commit só deve conter alterações de um capítulo específico.
 
-[![Exemplo de um commit realizado no repositório `cienciadedatos/pt-r4ds`.](images/commit-pt-r4ds.png){fig-alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
-
+[![Exemplo de um commit realizado no repositório cienciadedatos/pt-r4ds.](images/commit-pt-r4ds.png){fig-alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
 
 -   **Branch**: é uma ramificação do repositório. É uma forma de trabalhar em um projeto sem afetar o código que está na branch principal (geralmente é chamada de `main`). No caso das traduções, cada capítulo do livro é traduzido uma branch.
 
-[![Branches existentes no repositório `cienciadedatos/pt-r4ds`.](images/branches-pt-r4ds.png){fig-alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
-
+[![Branches existentes no repositório cienciadedatos/pt-r4ds.](images/branches-pt-r4ds.png){fig-alt="Captura de tela: Branches existentes no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds)
 
 -   **Issue**: é uma forma de comunicação entre a comunidade, mantenedores do projeto, etc. Geralmente é usado para documentar erros, sugerir novas funcionalidades, entre outros. No caso da tradução do livro R4DS, cada capítulo do livro tem uma issue, para acompanhar o andamento da tradução.
 
-[![Página com a lista de issues do repositório `cienciadedatos/pt-r4ds`.](images/issues-pt-r4ds.png){fig-alt="Captura de tela: Página das issues do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/issues)
+[![Página com a lista de issues do repositório cienciadedatos/pt-r4ds.](images/issues-pt-r4ds.png){fig-alt="Captura de tela: Página das issues do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/issues)
 
-[![Página de uma issue específica do repositório `cienciadedatos/pt-r4ds`.](images/issues-pt-r4ds.png){fig-alt="Captura de tela: Página de uma issue específica do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/issues/36)
+[![Página de uma issue específica do repositório cienciadedatos/pt-r4ds.](images/issues-pt-r4ds.png){fig-alt="Captura de tela: Página de uma issue específica do repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/issues/36)
 
 -   **Projects**: é uma funcionalidade do GitHub para gerenciar projetos. No caso da tradução do livro R4DS, usamos para acompanhar o andamento da tradução.
 
@@ -52,8 +50,10 @@ Para criar uma conta no GitHub, siga as instruções do [site oficial](https://g
 
 -   **Fork**: é uma cópia de um repositório para outra conta. No caso das traduções, é uma cópia do repositório livro que está sendo traduzido para a sua conta, para que você consiga realizar alterações no código e posteriormente enviar a sugestão de tradução para o repositório original.
 
-[![Exemplo de um fork realizado a partir do repositório `cienciadedatos/pt-r4ds` para a conta de uma pessoa da equipe de tradução](images/exemplo-fork-pt-r4ds.png){fig-alt="Captura de tela: Fork realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/brunomioto/pt-r4ds)
+[![Exemplo de um fork realizado a partir do repositório cienciadedatos/pt-r4ds para a conta de uma pessoa da equipe de tradução](images/exemplo-fork-pt-r4ds.png){fig-alt="Captura de tela: Fork realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}](https://github.com/brunomioto/pt-r4ds)
+
+-   **Clone**: é uma cópia de um repositório para o seu computador.
 
 -   **Pull request**: é uma solicitação de alteração no código. No caso das traduções, é uma solicitação de alteração no capítulo que está sendo traduzido.
 
-[![Exemplo de um pull request realizado no repositório `cienciadedatos/pt-r4ds`.](images/exemplo-pull-request-pt-r4ds.png){fig-alt="Captura de tela: Pull request realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}]()
+![Exemplo de um pull request realizado no repositório cienciadedatos/pt-r4ds.](images/exemplo-pull-request-pt-r4ds.png){fig-alt="Captura de tela: Pull request realizado no repositório utilizado para a tradução em Português do livro R4DS" fig-align="center" width="95%"}
