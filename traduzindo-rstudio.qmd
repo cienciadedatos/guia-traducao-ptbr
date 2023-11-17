@@ -45,6 +45,8 @@ Por exemplo, no caso da tradução do livro R4DS, se você for traduzir o capít
 
 Após abrir o arquivo, você deve traduzir o capítulo, sobrescrevendo o texto original pelo texto traduzido.
 
+Não altere a estrutura do texto e as marcações em markdown.
+
 Lembre-se de seguir as orientações presentes em @sec-orientacoes.
 
 ## Salvando as alterações
@@ -54,6 +56,49 @@ Conforme você for avançando na tradução do capítulo, você pode salvar as a
 
 Primeiro, selecione os arquivos que você deseja salvar clicando na caixa de seleção ao lado do nome do arquivo. No caso da tradução do livro R4DS, você deve selecionar o arquivo `.qmd` correspondente ao capítulo que você está traduzindo.
 
+ ![Painel Git do RStudio, com o arquivo que está sendo traduzido selecionado](images/painel-git-staged.png){fig-alt="Painel Git do RStudio, com o arquivo que está sendo traduzido selecionado" fig-align="center" width="95%"}
+
 Após selecionar os arquivos, clique no botão **Commit** no Painel Git do RStudio. Ele é representado por um ícone verde e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado que você escreva uma mensagem de commit. É recomendado que a mensagem de commit faça menção ao capítulo que está sendo traduzido. Após escrever a mensagem, clique em **Commit**.
 
+ ![Painel Git do RStudio, e o botão para criar fazer o Commit circulado](images/painel-git-commit.png){fig-alt="Painel Git do RStudio, e o botão para criar fazer o Commit circulado" fig-align="center" width="95%"}
 
+Para que as alterações sejam salvas no repositório remoto, você deve clicar no botão **Push** no Painel Git do RStudio. Ele é representado por uma seta verde apontada para cima. 
+
+ ![Painel Git do RStudio, e o botão para criar fazer o Push circulado](images/painel-git-push.png){fig-alt="Painel Git do RStudio, e o botão para criar fazer o Push circulado" fig-align="center" width="95%"}
+
+Você pode verificar se as alterações foram salvas no repositório acessando o seu repositório no GitHub, alterando para a branch usada para a tradução do capítulo, e verificando se as suas alterações aparecem no repositório.
+
+
+## Criando um Pull Request
+
+Após terminar a tradução do capítulo, você deve criar um Pull Request (PR) para que as suas alterações sejam incorporadas ao repositório principal.
+
+Para enviar um PR para o repositório da tradução, você deve acessar o repositório do projeto, e clicar no botão **New Pull Request**. 
+
+ ![Página de Pull Requests do repositório do projeto, e uma seta indicando o botão para criar um Pull Request](images/new-pull-request.png){fig-alt="Página de Pull Requests do repositório do projeto, e uma seta indicando o botão para criar um Pull Request" fig-align="center" width="95%"}
+
+
+Ao clicá-lo, será solicitado que você escolha a branch que será usada como base para a comparação. Essa parte é muito importante! No caso do projeto de tradução do livro R4DS, verifique se as opções selecionadas seguem o padrão abaixo:
+
+- **Base repository**: `cienciadedatos/pt-r4ds`
+
+- **Base**: `traducao-pt-2ed`
+
+- **Head repository**: `{NOME_DO_SEU_USUARIO}/pt-r4ds`
+
+- **Compare**: `{NOME_DA_SUA_BRANCH}`
+
+No caso da tradução do livro R4DS, o pull request deverá ser feito para a branch `traducao-pt-2ed` do repositório `cienciadedatos/pt-r4ds`. 
+
+
+**CUIDADO**: Ao criar o Pull Request, a primeira opcão oferecida é enviar para o repositório original do livro em inglês.
+
+O GitHub apresentará a comparação do código existente no projeto de tradução, e o código da sua branch. Se estiver tudo ok, clique no botão **Create Pull Request**.
+
+Uma página para a criação do Pull Request será aberta. Nela, você deve preencher o título e a descrição do Pull Request.
+
+O nome do pull request deve ser estruturado da seguinte forma: `"Tradução: {nome_do_arquivo.qmd}"`.
+
+Na mensagem do Pull Request, registre todas as dúvidas e/ou incertezas que tenha tido ao traduzir, assim as pessoas que revisarem o capítulo podem se atentar aos pontos citados.
+
+Envie a pull request, e aguarde a revisão do capítulo.
