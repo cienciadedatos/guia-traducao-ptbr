@@ -1,0 +1,51 @@
+# Revisando via GitHub
+
+Nesta seção, explicaremos como as revisões podem ser feitas via GitHub.
+
+A etapa de revisão é muito mais simples do que a tradução! Portanto, caso você esteja contribuindo com o projeto pela primeira vez, recomendamos que você comece revisando um capítulo.
+
+É importante que você leia as orientações em @sec-orientacoes, para que as traduções sigam os mesmos padrões.
+
+Primeiramente, você precisará de uma conta no GitHub. Caso você ainda não tenha, [crie uma conta](https://github.com/signup).
+
+## Escolhendo um capítulo para revisar
+
+Para iniciar a revisão, você precisará escolher um capítulo para revisar. Para isso, você pode verificar a página de Pull Requests do repositório.
+
+[![Página de Pull Requests no repositório cienciadedatos/pt-r4ds.](images/pull-requests.png){fig-alt="Captura de tela: Página de Pull Requests no repositório cienciadedatos/pt-r4ds" fig-align="center" width="95%"}](https://github.com/cienciadedatos/pt-r4ds/pulls)
+
+No projeto de tradução do livro R4DS, a label "[Precisa: Revisor(a)](https://github.com/cienciadedatos/pt-r4ds/pulls?q=is%3Apr+is%3Aopen+label%3A%22Precisa%3A+Revisor%28a%29%22)" é utilizada para marcar os capítulos que precisam de revisor.
+
+Abra a Pull Request do capítulo que irá revisar, e verifique se o capítulo já possui revisor. Caso não possua, você pode indicar que irá revisar o capítulo. Para isso, basta escrever um comentário na Pull Request, dizendo que irá revisar o capítulo.
+
+![Exemplo de Pull Request no repositório cienciadedatos/pt-r4ds](images/exemplo-pr-revisar.png){fig-alt="Captura de tela: Exemplo de Pull Request no repositório cienciadedatos/pt-r4ds" fig-align="center" width="95%"}
+
+Clique na aba "Files changed". No botão de engrenagem, verifique se a opção escolhida para "Diff View" é "Split". Essa visualização facilitará a revisão, pois permite que as traduções sejam vistas lado a lado. 
+
+![Use a visualização `Files Changed -> Split` para a revisão](images/files-changed-pr.png){fig-alt="Use a visualização `Files Changed -> Split` para a revisão" fig-align="center" width="95%"}
+
+
+Revise a tradução. Caso encontre algo que precisa ser discutido, ou alterado, clique no botão + ao lado da linha do código alterado. Uma caixa aparecerá onde é possível deixar uma mensagem ou sugestão de alteração.
+
+Caso queira deixar uma sugestão de alteração, clique no botão aonde mostra uma folha com o sinal de mais e menos, e será gerado um template de sugestão mais fácil de ser resolvido posteriormente:
+
+![Botão para enviar sugestão de código](images/botao-suggestion.png){fig-alt="Botão para enviar sugestão de código" fig-align="center" width="10%"}
+
+![Escrevendo suas sugestões referentes à algum trecho de código](images/suggestion.png){fig-alt="Escrevendo suas sugestões referentes à algum trecho de código" fig-align="center" width="95%"}
+
+
+Escreva a sugestão de alteração, e antes de enviar, clique em "Preview". Verifique se a contribuição está correta.
+
+![Verifique se a sua sugestão aparece corretamente em "Preview"](images/verificando-suggestion.png){fig-alt="Verifique se a sua sugestão aparece corretamente em Preview" fig-align="center" width="95%"}
+
+Após escrever a mensagem, clique em "Start a review".
+
+![Botão 'Start a Review' serve para iniciar a revisão](images/start-review.png){fig-alt="Botão 'Start a Review' serve para iniciar a revisão" fig-align="center" width="95%"}
+
+Você pode criar todas as mensagens e sugestões, e enviá-las de uma vez. Caso não consiga terminar no mesmo dia, envie suas sugestões antes de fechar a página, e avise na issue que a revisão ainda está em andamento. Assim não corre o risco de perder o que foi feito!
+
+Para enviar as sugestões, clique em "Finish your review" (no canto superior direito), escreva uma mensagem e envie sua revisão!
+
+![Botão 'Submit Review' serve para enviar a revisão](images/submit-review.png){fig-alt="Botão 'Submit Review' serve para enviar a revisão" fig-align="center" width="95%"}
+
+A pessoa responsável pela tradução do capítulo receberá um email automático do GitHub, e poderá ver e avaliar suas sugestões e comentários. 

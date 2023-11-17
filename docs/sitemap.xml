@@ -2,34 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/index.html</loc>
-    <lastmod>2023-11-17T00:27:42.408Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.794Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/dados.html</loc>
-    <lastmod>2023-11-17T00:27:42.411Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.797Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/orientacoes.html</loc>
-    <lastmod>2023-11-17T00:27:42.416Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.802Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/git-github.html</loc>
-    <lastmod>2023-11-17T00:27:42.422Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.806Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/revisando-github.html</loc>
+    <lastmod>2023-11-17T00:59:50.810Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/setup-traducao.html</loc>
-    <lastmod>2023-11-17T00:27:42.425Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.813Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/ambiente-local-rstudio.html</loc>
-    <lastmod>2023-11-17T00:27:42.429Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.819Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/traduzindo-rstudio.html</loc>
-    <lastmod>2023-11-17T00:27:42.433Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.824Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/incorporando-revisao.html</loc>
+    <lastmod>2023-11-17T00:59:50.826Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/weblate.html</loc>
-    <lastmod>2023-11-17T00:27:42.435Z</lastmod>
+    <lastmod>2023-11-17T00:59:50.829Z</lastmod>
   </url>
 </urlset>

@@ -18,13 +18,19 @@ book:
     - index.qmd
     - dados.qmd
     - orientacoes.qmd
-    - part: "Traduções realizadas no GitHub"
+          
+    - part: "Traduzindo via GitHub"
       chapters:  
       - git-github.qmd
+      - revisando-github.qmd   
       - setup-traducao.qmd
       - ambiente-local-rstudio.qmd
       - traduzindo-rstudio.qmd
-    - part: "Traduções realizadas no Weblate"
+      - incorporando-revisao.qmd
+      
+
+      
+    - part: "Traduzindo via Weblate"
       chapters:  
       - weblate.qmd
 
