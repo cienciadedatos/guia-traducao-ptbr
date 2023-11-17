@@ -1,4 +1,4 @@
-# Orientações para tradução
+# Orientações para tradução {#sec-orientacoes}
 
 ## Orientações gerais
 
@@ -57,7 +57,7 @@
 -   Para padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:
 
 | Termo em inglês                                         | Exemplo traduzido    |
-|---------------------------------------------------------|----------------------|
+|--------------------------------------------------|----------------------|
 | aesthetics                                              | atributos estéticos  |
 | binwidth                                                | largura de intervalo |
 | code style                                              | estilo de código     |

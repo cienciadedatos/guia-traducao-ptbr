@@ -74,7 +74,7 @@
     "href": "setup-traducao.html#fazer-um-fork-do-repositório",
     "title": "5  Preparando o GitHub para realizar a tradução",
     "section": "5.1 Fazer um fork do repositório",
-    "text": "5.1 Fazer um fork do repositório\nO primeiro passo a ser realizado é criar um fork do repositório do livro que você deseja traduzir, para que você possa realizar as alterações necessárias na sua conta, e posteriormente enviar sua contribuição.\nCaso você não saiba o que é um fork, recomendo voltar na Seção 4.4 e conferir a lista de conceitos importantes.\nPara realizar o fork, acesse o repositório do livro que você deseja traduzir e clicar no botão Fork:\n\n\n\nExemplo do botão para criar um fork.\n\n\nEntão, você será redirecionado para uma pagina para você confirmar a criação do seu fork. É importante que em “Owner” esteja selecionada a sua conta do GitHub, e que a opção “Copy the main branch only” não esteja selecionada:\n\n\n\nExemplo da página para confirmar a criação do fork.\n\n\nEntão, você será redirecionado para a página do seu fork, que estará localizado na sua conta do GitHub:\n\n\n\nPágina do fork criado no exemplo."
+    "text": "5.1 Fazer um fork do repositório\nO primeiro passo a ser realizado é criar um fork do repositório do livro que você deseja traduzir, para que você possa realizar as alterações necessárias na sua conta, e posteriormente enviar sua contribuição.\nIsso é necessário ser realizado apenas uma vez, ao iniciar suas atividades em um projeto de tradução!\nCaso você não saiba o que é um fork, recomendo voltar na Seção 4.4 e conferir a lista de conceitos importantes.\nPara realizar o fork, acesse o repositório do livro que você deseja traduzir e clicar no botão Fork:\n\n\n\nExemplo do botão para criar um fork.\n\n\nEntão, você será redirecionado para uma pagina para você confirmar a criação do seu fork. É importante que em “Owner” esteja selecionada a sua conta do GitHub, e que a opção “Copy the main branch only” não esteja selecionada:\n\n\n\nExemplo da página para confirmar a criação do fork.\n\n\nEntão, você será redirecionado para a página do seu fork, que estará localizado na sua conta do GitHub:\n\n\n\nPágina do fork criado no exemplo."
   },
   {
     "objectID": "setup-traducao.html#escolhendo-o-ambiente-para-traduzir",
@@ -91,24 +91,59 @@
     "text": "6.1 Conectando o RStudio e o GitHub\nO pacote usethis será muito útil nesta etapa. Portanto, instale-o e carregue-o:\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\n\nSe apresente para o Git, utilizando a função use_git_config():\n\nusethis::use_git_config(\n  # seu nome\n  user.name = \"Carol Denvers\",\n  # o email que você usa na sua conta do GitHub\n  user.email = \"awesomecaptainmarvel@gmail.com\"\n)\n\nCrie um GitHub PAT Token (similar à uma senha) utilizando a função create_github_token().\n\nusethis::create_github_token()\n\nNessa etapa, uma janela do navegador será aberta para você fazer login na sua conta do GitHub e criar o token. Não é necessário alterar as configurações, mas recomendamos nomear o token, e escolher um tempo para que ele expire.\n\n\nPágina para criar um GitHub Token\n\nClique em “Generate Token” e copie o token gerado:\n\n\nPágina que mostra o token gerado\n\nVolte para o RStudio. Utilize a função gitcreds::gitcreds_set() para armazenar o seu novo token, colando o token gerado quando for solicitado.\n\ngitcreds::gitcreds_set()\n\nReinicie a sua sessão do RStudio (o atalho CTRL + SHIFT + F10 pode ser útil, ou clique no menu superior em: Session -&gt; Restart R).\nUtilize a função usethis::git_sitrep() para verificar se o seu nome, email e PAT estão configurados corretamente.\n\nusethis::git_sitrep()\n#&gt; Git config (global)\n#&gt; ● Name: 'SEU NOME DEVE APARECER AQUI'\n#&gt; ● Email: 'SEU EMAIL DEVE APARECER AQUI'\n#&gt; GitHub\n#&gt; ● Default GitHub host: 'https://github.com'\n#&gt; ● Personal access token for 'https://github.com': '&lt;discovered&gt;'\n#&gt; ● GitHub user: 'SEU NOME DE USUÁRIO(A) DEVE APARECER AQUI'\n#&gt; ● Token scopes: 'gist, repo, user, workflow'\n#&gt; ● Email(s): 'SEU EMAIL DEVE APARECER AQUI'\n\nO mais importante é verificar se aparece: Personal access token for 'https://github.com': '&lt;discovered&gt;'. Caso não esteja, verifique se você copiou o token corretamente, e se você reiniciou a sessão do RStudio."
   },
   {
+    "objectID": "ambiente-local-rstudio.html#clonando-o-repositório",
+    "href": "ambiente-local-rstudio.html#clonando-o-repositório",
+    "title": "\n6  Configurando o ambiente local com o RStudio\n",
+    "section": "\n6.2 Clonando o repositório",
+    "text": "6.2 Clonando o repositório\nAgora precisamos clonar o repositório, fazendo uma cópia do repositório que está na sua conta do GitHub para o seu computador.\nPara isso, primeiramente abra no navegador o repositório que você fez o Fork no GitHub. A URL deverá ser algo similar à:\nhttps://github.com/seu-usuario/nome-repositorio-traducao\nCopie essa URL, e volte ao RStudio!\nNo RStudio, crie um novo projeto, utilizando o menu superior: File -&gt; New Project -&gt; Version Control -&gt; Git.\n Nesta etapa, você deverá preencher os seguintes campos:\n\nRepository URL: a URL do repositório que você fez o Fork no GitHub\nProject directory name: o nome da pasta que será criada no seu computador para armazenar o repositório. Geralmente o RStudio preenche esse campo automaticamente.\nCreate project as subdirectory of: o caminho para a pasta onde você quer que o repositório seja clonado. Você pode clicar em “Browse” para facilitar a escolha.\n\nApós preencher os campos, clique em Create Project. O projeto será clonado para o seu computador, e isso pode demorar um pouco. Após ser clonado, o projeto do RStudio contendo os códigos do repositório será aberto."
+  },
+  {
+    "objectID": "traduzindo-rstudio.html#alterando-entre-branches",
+    "href": "traduzindo-rstudio.html#alterando-entre-branches",
+    "title": "7  Traduzindo um capítulo",
+    "section": "7.1 Alterando entre branches",
+    "text": "7.1 Alterando entre branches\nComo citado em Seção 4.4, o Git permite que você tenha várias versões do seu código, chamadas de branches.\nÉ importante verificar qual branch o projeto de tradução está usando como “referência” para trabalho. No caso do projeto de tradução do livro R4DS, a branch de referência é a traducao-pt-2ed.\nPara verificar qual branch o projeto está usando, verifique no Painel Git do RStudio, em seu canto superior direito. Se a branch não for a traducao-pt-2ed, você pode alterar clicando no nome da branch e selecionando a branch correta.\n\n\n\nPainel Git do RStudio, mostrando a branch atual: traducao-pt-2ed"
+  },
+  {
+    "objectID": "traduzindo-rstudio.html#atualizando-o-repositório-local",
+    "href": "traduzindo-rstudio.html#atualizando-o-repositório-local",
+    "title": "7  Traduzindo um capítulo",
+    "section": "7.2 Atualizando o repositório local",
+    "text": "7.2 Atualizando o repositório local\nPara atualizar o repositório local, você deve primeiro verificar se há atualizações no repositório remoto. Para isso, clique no botão Pull no Painel Git do RStudio. Ele é representado por uma seta azul apontada para baixo.\n\n\n\nPainel Git do RStudio, e o botão Pull circulado"
+  },
+  {
+    "objectID": "traduzindo-rstudio.html#criar-uma-branch-nova",
+    "href": "traduzindo-rstudio.html#criar-uma-branch-nova",
+    "title": "7  Traduzindo um capítulo",
+    "section": "7.3 Criar uma branch nova",
+    "text": "7.3 Criar uma branch nova\nSiga os passos após se certificar que está na branch correta (a utilizada como referência no projeto de tradução), e a branch está atualizada (através do botão Pull). Essas etapas são importantes para evitar conflitos no repositório, e foram citadas logo acima.\nDevemos criar uma branch nova cada vez que iniciarmos a tradução de algum capítulo! Para isso, clique no botão New Branch no Painel Git do RStudio. Ele é representado por um ícone roxo e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado o nome da branch. É recomendado que o nome da branch faça menção ao capítulo que será traduzido. Não adicione caracteres especiais, espaços, acentos, etc, no nome da branch. Após escolher o nome, clique em Create.\n\n\n\nPainel Git do RStudio, e o botão para criar uma nova branch circulado"
+  },
+  {
+    "objectID": "traduzindo-rstudio.html#abrindo-o-arquivo-a-ser-traduzido",
+    "href": "traduzindo-rstudio.html#abrindo-o-arquivo-a-ser-traduzido",
+    "title": "7  Traduzindo um capítulo",
+    "section": "7.4 Abrindo o arquivo a ser traduzido",
+    "text": "7.4 Abrindo o arquivo a ser traduzido\nApós criar a branch nova, você deve abrir o arquivo a ser traduzido. Para isso, utilize o painel “Files” (arquivos) do RStudio, para navegar e encontrar o arquivo .qmd correspondente ao capítulo que você irá traduzir.\nPor exemplo, no caso da tradução do livro R4DS, se você for traduzir o capítulo chamado “Communicate”, abra o arquivo communicate.qmd."
+  },
+  {
+    "objectID": "traduzindo-rstudio.html#traduzindo-o-capítulo",
+    "href": "traduzindo-rstudio.html#traduzindo-o-capítulo",
+    "title": "7  Traduzindo um capítulo",
+    "section": "7.5 Traduzindo o capítulo",
+    "text": "7.5 Traduzindo o capítulo\nApós abrir o arquivo, você deve traduzir o capítulo, sobrescrevendo o texto original pelo texto traduzido.\nLembre-se de seguir as orientações presentes em Capítulo 3."
+  },
+  {
+    "objectID": "traduzindo-rstudio.html#salvando-as-alterações",
+    "href": "traduzindo-rstudio.html#salvando-as-alterações",
+    "title": "7  Traduzindo um capítulo",
+    "section": "7.6 Salvando as alterações",
+    "text": "7.6 Salvando as alterações\nConforme você for avançando na tradução do capítulo, você pode salvar as alterações que você fez no arquivo usando o Painel Git do RStudio.\nPrimeiro, selecione os arquivos que você deseja salvar clicando na caixa de seleção ao lado do nome do arquivo. No caso da tradução do livro R4DS, você deve selecionar o arquivo .qmd correspondente ao capítulo que você está traduzindo.\nApós selecionar os arquivos, clique no botão Commit no Painel Git do RStudio. Ele é representado por um ícone verde e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado que você escreva uma mensagem de commit. É recomendado que a mensagem de commit faça menção ao capítulo que está sendo traduzido. Após escrever a mensagem, clique em Commit."
+  },
+  {
     "objectID": "weblate.html",
     "href": "weblate.html",
     "title": "8  Weblate",
     "section": "",
     "text": "O Weblate é a plataforma que é utilizada na tradução dos outputs (como mensagens de erro, warnings, etc) do R base.\nEle é uma plataforma de tradução online, que permite que várias pessoas trabalhem em conjunto na tradução de um projeto.\nFuturamente, adicionaremos conteúdo sobre como contribuir com a tradução do R base utilizando o Weblate."
-  },
-  {
-    "objectID": "repo-local-rstudio.html",
-    "href": "repo-local-rstudio.html",
-    "title": "7  Preparando o repositório local",
-    "section": "",
-    "text": "Agora precisamos clonar o repositório, fazendo uma cópia do repositório que está na sua conta do GitHub para o seu computador.\nPara isso, primeiramente abra no navegador o repositório que você fez o Fork no GitHub. A URL deverá ser algo similar à:\nhttps://github.com/seu-usuario/nome-repositorio-traducao\nCopie essa URL, e volte ao RStudio!\nNo RStudio, crie um novo projeto, utilizando o menu superior: File -&gt; New Project -&gt; Version Control -&gt; Git.\n Nesta etapa, você deverá preencher os seguintes campos:\n\nRepository URL: a URL do repositório que você fez o Fork no GitHub\nProject directory name: o nome da pasta que será criada no seu computador para armazenar o repositório. Geralmente o RStudio preenche esse campo automaticamente.\nCreate project as subdirectory of: o caminho para a pasta onde você quer que o repositório seja clonado. Você pode clicar em “Browse” para facilitar a escolha.\n\nApós preencher os campos, clique em Create Project. O projeto será clonado para o seu computador, e isso pode demorar um pouco. Após ser clonado, o projeto do RStudio contendo os códigos do repositório será aberto."
-  },
-  {
-    "objectID": "repo-local-rstudio.html#alterando-entre-branches",
-    "href": "repo-local-rstudio.html#alterando-entre-branches",
-    "title": "7  Preparando o repositório local",
-    "section": "7.1 Alterando entre branches",
-    "text": "7.1 Alterando entre branches\nComo citado em Seção 4.4, o Git permite que você tenha várias versões do seu código, chamadas de branches.\nÉ importante verificar qual branch o projeto de tradução está usando como “referência” para trabalho. No caso do projeto de tradução do livro R4DS, a branch de referência é a traducao-pt-2ed.\nPara verificar qual branch o projeto está usando, verifique no Painel Git do RStudio, em seu canto superior direito. Se a branch não for a traducao-pt-2ed, você pode alterar clicando no nome da branch e selecionando a branch correta.\n\n\n\nPainel Git do RStudio, mostrando a branch atual: traducao-pt-2ed"
   }
 ]

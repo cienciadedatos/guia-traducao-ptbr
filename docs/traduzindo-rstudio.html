@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 7&nbsp; Preparando o repositório local</title>
+<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 7&nbsp; Traduzindo um capítulo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-github.html">Traduções realizadas no GitHub</a></li><li class="breadcrumb-item"><a href="./repo-local-rstudio.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o repositório local</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-github.html">Traduções realizadas no GitHub</a></li><li class="breadcrumb-item"><a href="./traduzindo-rstudio.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -149,8 +149,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repo-local-rstudio.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o repositório local</span></span></a>
+  <a href="./traduzindo-rstudio.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></span></a>
   </div>
 </li>
       </ul>
@@ -183,15 +183,20 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#alterando-entre-branches" id="toc-alterando-entre-branches" class="nav-link active" data-scroll-target="#alterando-entre-branches"><span class="header-section-number">7.1</span> Alterando entre branches</a></li>
+  <li><a href="#atualizando-o-repositório-local" id="toc-atualizando-o-repositório-local" class="nav-link" data-scroll-target="#atualizando-o-repositório-local"><span class="header-section-number">7.2</span> Atualizando o repositório local</a></li>
+  <li><a href="#criar-uma-branch-nova" id="toc-criar-uma-branch-nova" class="nav-link" data-scroll-target="#criar-uma-branch-nova"><span class="header-section-number">7.3</span> Criar uma branch nova</a></li>
+  <li><a href="#abrindo-o-arquivo-a-ser-traduzido" id="toc-abrindo-o-arquivo-a-ser-traduzido" class="nav-link" data-scroll-target="#abrindo-o-arquivo-a-ser-traduzido"><span class="header-section-number">7.4</span> Abrindo o arquivo a ser traduzido</a></li>
+  <li><a href="#traduzindo-o-capítulo" id="toc-traduzindo-o-capítulo" class="nav-link" data-scroll-target="#traduzindo-o-capítulo"><span class="header-section-number">7.5</span> Traduzindo o capítulo</a></li>
+  <li><a href="#salvando-as-alterações" id="toc-salvando-as-alterações" class="nav-link" data-scroll-target="#salvando-as-alterações"><span class="header-section-number">7.6</span> Salvando as alterações</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/repo-local-rstudio.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/traduzindo-rstudio.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o repositório local</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></h1>
 </div>
 
 
@@ -206,18 +211,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Agora precisamos <strong>clonar</strong> o repositório, fazendo uma cópia do repositório que está na sua conta do GitHub para o seu computador.</p>
-<p>Para isso, primeiramente abra no navegador o repositório que você fez o Fork no GitHub. A URL deverá ser algo similar à:</p>
-<p><code>https://github.com/seu-usuario/nome-repositorio-traducao</code></p>
-<p>Copie essa URL, e volte ao RStudio!</p>
-<p>No RStudio, crie um novo projeto, utilizando o menu superior: <strong>File -&gt; New Project -&gt; Version Control -&gt; Git</strong>.</p>
-<p><img src="images/new-project.png" class="img-fluid" style="width:95.0%" data-fig-align="center" alt="Captura de tela: RStudio new project from Git"> Nesta etapa, você deverá preencher os seguintes campos:</p>
-<ul>
-<li><p><strong>Repository URL</strong>: a URL do repositório que você fez o Fork no GitHub</p></li>
-<li><p><strong>Project directory name</strong>: o nome da pasta que será criada no seu computador para armazenar o repositório. Geralmente o RStudio preenche esse campo automaticamente.</p></li>
-<li><p><strong>Create project as subdirectory of</strong>: o caminho para a pasta onde você quer que o repositório seja clonado. Você pode clicar em “Browse” para facilitar a escolha.</p></li>
-</ul>
-<p>Após preencher os campos, clique em <strong>Create Project</strong>. O projeto será clonado para o seu computador, e isso pode demorar um pouco. Após ser clonado, o projeto do RStudio contendo os códigos do repositório será aberto.</p>
+<p>Os passos descritos até aqui são necessários apenas na primeira vez que você for iniciar no projeto de tradução.</p>
+<p>Após isso, para cada capítulo que você for traduzir, você deve seguir os seguintes passos:</p>
 <section id="alterando-entre-branches" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="alterando-entre-branches"><span class="header-section-number">7.1</span> Alterando entre branches</h2>
 <p>Como citado em <a href="git-github.html#sec-git-github-conceitos"><span>Seção&nbsp;4.4</span></a>, o Git permite que você tenha várias versões do seu código, chamadas de <strong>branches</strong>.</p>
@@ -229,6 +224,43 @@ ul.task-list li input[type="checkbox"] {
 <figcaption class="figure-caption">Painel Git do RStudio, mostrando a branch atual: traducao-pt-2ed</figcaption>
 </figure>
 </div>
+</section>
+<section id="atualizando-o-repositório-local" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="atualizando-o-repositório-local"><span class="header-section-number">7.2</span> Atualizando o repositório local</h2>
+<p>Para atualizar o repositório local, você deve primeiro verificar se há atualizações no repositório remoto. Para isso, clique no botão <strong>Pull</strong> no Painel Git do RStudio. Ele é representado por uma seta azul apontada para baixo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/painel-git-pull.png" class="img-fluid figure-img" style="width:95.0%" alt="Painel Git do RStudio, e o botão Pull circulado"></p>
+<figcaption class="figure-caption">Painel Git do RStudio, e o botão Pull circulado</figcaption>
+</figure>
+</div>
+</section>
+<section id="criar-uma-branch-nova" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="criar-uma-branch-nova"><span class="header-section-number">7.3</span> Criar uma branch nova</h2>
+<p>Siga os passos após se certificar que está na branch correta (a utilizada como referência no projeto de tradução), e a branch está atualizada (através do botão Pull). Essas etapas são importantes para evitar conflitos no repositório, e foram citadas logo acima.</p>
+<p>Devemos criar uma branch nova cada vez que iniciarmos a tradução de algum capítulo! Para isso, clique no botão <strong>New Branch</strong> no Painel Git do RStudio. Ele é representado por um ícone roxo e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado o nome da branch. É recomendado que o nome da branch faça menção ao capítulo que será traduzido. Não adicione caracteres especiais, espaços, acentos, etc, no nome da branch. Após escolher o nome, clique em <strong>Create</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/painel-git-new-branch.png" class="img-fluid figure-img" style="width:95.0%" alt="Painel Git do RStudio, e o botão para criar uma nova branch circulado"></p>
+<figcaption class="figure-caption">Painel Git do RStudio, e o botão para criar uma nova branch circulado</figcaption>
+</figure>
+</div>
+</section>
+<section id="abrindo-o-arquivo-a-ser-traduzido" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="abrindo-o-arquivo-a-ser-traduzido"><span class="header-section-number">7.4</span> Abrindo o arquivo a ser traduzido</h2>
+<p>Após criar a branch nova, você deve abrir o arquivo a ser traduzido. Para isso, utilize o painel “Files” (arquivos) do RStudio, para navegar e encontrar o arquivo <code>.qmd</code> correspondente ao capítulo que você irá traduzir.</p>
+<p>Por exemplo, no caso da tradução do livro R4DS, se você for traduzir o capítulo chamado “Communicate”, abra o arquivo <code>communicate.qmd</code>.</p>
+</section>
+<section id="traduzindo-o-capítulo" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="traduzindo-o-capítulo"><span class="header-section-number">7.5</span> Traduzindo o capítulo</h2>
+<p>Após abrir o arquivo, você deve traduzir o capítulo, sobrescrevendo o texto original pelo texto traduzido.</p>
+<p>Lembre-se de seguir as orientações presentes em <a href="orientacoes.html"><span>Capítulo&nbsp;3</span></a>.</p>
+</section>
+<section id="salvando-as-alterações" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="salvando-as-alterações"><span class="header-section-number">7.6</span> Salvando as alterações</h2>
+<p>Conforme você for avançando na tradução do capítulo, você pode salvar as alterações que você fez no arquivo usando o Painel Git do RStudio.</p>
+<p>Primeiro, selecione os arquivos que você deseja salvar clicando na caixa de seleção ao lado do nome do arquivo. No caso da tradução do livro R4DS, você deve selecionar o arquivo <code>.qmd</code> correspondente ao capítulo que você está traduzindo.</p>
+<p>Após selecionar os arquivos, clique no botão <strong>Commit</strong> no Painel Git do RStudio. Ele é representado por um ícone verde e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado que você escreva uma mensagem de commit. É recomendado que a mensagem de commit faça menção ao capítulo que está sendo traduzido. Após escrever a mensagem, clique em <strong>Commit</strong>.</p>
 
 
 </section>

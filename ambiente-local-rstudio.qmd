@@ -69,3 +69,29 @@ usethis::git_sitrep()
 ```
 
 O mais importante é verificar se aparece: `Personal access token for 'https://github.com': '<discovered>'`. Caso não esteja, verifique se você copiou o token corretamente, e se você reiniciou a sessão do RStudio.
+
+## Clonando o repositório
+
+Agora precisamos **clonar** o repositório, fazendo uma cópia do repositório que está na sua conta do GitHub para o seu computador.
+
+Para isso, primeiramente abra no navegador o repositório que você fez o Fork no GitHub. A URL deverá ser algo similar à: 
+
+`https://github.com/seu-usuario/nome-repositorio-traducao`
+
+Copie essa URL, e volte ao RStudio!
+
+No RStudio, crie um novo projeto, utilizando o menu superior: **File -> New Project -> Version Control -> Git**.
+
+![RStudio: New Project - Clone Git Repository](images/new-project.png){fig-alt="Captura de tela: RStudio new project from Git" fig-align="center" width="95%"}
+Nesta etapa, você deverá preencher os seguintes campos:
+
+  - **Repository URL**: a URL do repositório que você fez o Fork no GitHub
+  
+  - **Project directory name**: o nome da pasta que será criada no seu computador para armazenar o repositório. Geralmente o RStudio preenche esse campo automaticamente.
+  
+  - **Create project as subdirectory of**: o caminho para a pasta onde você quer que o repositório seja clonado. Você pode clicar em "Browse" para facilitar a escolha.
+  
+Após preencher os campos, clique em **Create Project**. O projeto será clonado para o seu computador, e isso pode demorar um pouco. Após ser clonado, o projeto do RStudio contendo os códigos do repositório será aberto.
+
+
+

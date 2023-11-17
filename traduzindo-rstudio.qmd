@@ -1,0 +1,59 @@
+# Traduzindo um capítulo
+
+Os passos descritos até aqui são necessários apenas na primeira vez que você for iniciar no projeto de tradução.
+
+
+Após isso, para cada capítulo que você for traduzir, você deve seguir os seguintes passos:
+
+## Alterando entre branches
+
+Como citado em @sec-git-github-conceitos, o Git permite que você tenha várias versões do seu código, chamadas de **branches**. 
+
+É importante verificar qual branch o projeto de tradução está usando como "referência" para trabalho. No caso do projeto de tradução do livro R4DS, a branch de referência é a `traducao-pt-2ed`.
+
+Para verificar qual branch o projeto está usando,
+verifique no Painel Git do RStudio, em seu canto superior direito. Se a branch não for a `traducao-pt-2ed`, você pode alterar clicando no nome da branch e selecionando a branch correta.
+
+![Painel Git do RStudio, mostrando a branch atual: traducao-pt-2ed](images/painel-git-branches.png){fig-alt="Painel Git do RStudio, mostrando a branch atual: traducao-pt-2ed" fig-align="center" width="95%"}
+
+## Atualizando o repositório local
+
+Para atualizar o repositório local, você deve primeiro verificar se há atualizações no repositório remoto. Para isso, clique no botão **Pull** no Painel Git do RStudio. Ele é representado por uma seta azul apontada para baixo.
+
+![Painel Git do RStudio, e o botão Pull circulado](images/painel-git-pull.png){fig-alt="Painel Git do RStudio, e o botão Pull circulado" fig-align="center" width="95%"}
+
+
+
+## Criar uma branch nova
+
+Siga os passos após se certificar que está na branch correta (a utilizada como referência no projeto de tradução), e a branch está atualizada (através do botão Pull). Essas etapas são importantes para evitar conflitos no repositório, e foram citadas logo acima.
+
+
+Devemos criar uma branch nova cada vez que iniciarmos a tradução de algum capítulo!
+ Para isso, clique no botão **New Branch** no Painel Git do RStudio. Ele é representado por um ícone roxo e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado o nome da branch. É recomendado que o nome da branch faça menção ao capítulo que será traduzido. Não adicione caracteres especiais, espaços, acentos, etc, no nome da branch. Após escolher o nome, clique em **Create**.
+ 
+ ![Painel Git do RStudio, e o botão para criar uma nova branch circulado](images/painel-git-new-branch.png){fig-alt="Painel Git do RStudio, e o botão para criar uma nova branch circulado" fig-align="center" width="95%"}
+
+
+## Abrindo o arquivo a ser traduzido
+
+Após criar a branch nova, você deve abrir o arquivo a ser traduzido. Para isso, utilize o painel "Files" (arquivos) do RStudio, para navegar e encontrar o arquivo `.qmd` correspondente ao capítulo que você irá traduzir. 
+
+Por exemplo, no caso da tradução do livro R4DS, se você for traduzir o capítulo chamado "Communicate", abra o arquivo `communicate.qmd`.
+
+## Traduzindo o capítulo
+
+Após abrir o arquivo, você deve traduzir o capítulo, sobrescrevendo o texto original pelo texto traduzido.
+
+Lembre-se de seguir as orientações presentes em @sec-orientacoes.
+
+## Salvando as alterações
+
+Conforme você for avançando na tradução do capítulo, você pode salvar as alterações que você fez no arquivo usando o Painel Git do RStudio.
+
+
+Primeiro, selecione os arquivos que você deseja salvar clicando na caixa de seleção ao lado do nome do arquivo. No caso da tradução do livro R4DS, você deve selecionar o arquivo `.qmd` correspondente ao capítulo que você está traduzindo.
+
+Após selecionar os arquivos, clique no botão **Commit** no Painel Git do RStudio. Ele é representado por um ícone verde e branco, ao lado do nome da branch atual. Ao clicá-lo, será solicitado que você escreva uma mensagem de commit. É recomendado que a mensagem de commit faça menção ao capítulo que está sendo traduzido. Após escrever a mensagem, clique em **Commit**.
+
+

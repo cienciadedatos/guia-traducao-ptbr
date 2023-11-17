@@ -60,7 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./repo-local-rstudio.html" rel="next">
+<link href="./traduzindo-rstudio.html" rel="next">
 <link href="./setup-traducao.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -169,8 +169,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repo-local-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o repositório local</span></span></a>
+  <a href="./traduzindo-rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></span></a>
   </div>
 </li>
       </ul>
@@ -201,6 +201,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
 <li><a href="#conectando-o-rstudio-e-o-github" id="toc-conectando-o-rstudio-e-o-github" class="nav-link active" data-scroll-target="#conectando-o-rstudio-e-o-github"><span class="header-section-number">6.1</span> Conectando o RStudio e o GitHub</a></li>
+  <li><a href="#clonando-o-reposit%C3%B3rio" id="toc-clonando-o-repositório" class="nav-link" data-scroll-target="#clonando-o-reposit%C3%B3rio"><span class="header-section-number">6.2</span> Clonando o repositório</a></li>
   </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/ambiente-local-rstudio.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
     </div>
 <!-- main -->
@@ -270,6 +271,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span><span class="co">#&gt; ● Email(s): 'SEU EMAIL DEVE APARECER AQUI'</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>O mais importante é verificar se aparece: <code>Personal access token for 'https://github.com': '&lt;discovered&gt;'</code>. Caso não esteja, verifique se você copiou o token corretamente, e se você reiniciou a sessão do RStudio.</p>
+</section><section id="clonando-o-repositório" class="level2" data-number="6.2"><h2 data-number="6.2" class="anchored" data-anchor-id="clonando-o-repositório">
+<span class="header-section-number">6.2</span> Clonando o repositório</h2>
+<p>Agora precisamos <strong>clonar</strong> o repositório, fazendo uma cópia do repositório que está na sua conta do GitHub para o seu computador.</p>
+<p>Para isso, primeiramente abra no navegador o repositório que você fez o Fork no GitHub. A URL deverá ser algo similar à:</p>
+<p><code>https://github.com/seu-usuario/nome-repositorio-traducao</code></p>
+<p>Copie essa URL, e volte ao RStudio!</p>
+<p>No RStudio, crie um novo projeto, utilizando o menu superior: <strong>File -&gt; New Project -&gt; Version Control -&gt; Git</strong>.</p>
+<p><img src="images/new-project.png" class="img-fluid" style="width:95.0%" data-fig-align="center" alt="Captura de tela: RStudio new project from Git"> Nesta etapa, você deverá preencher os seguintes campos:</p>
+<ul>
+<li><p><strong>Repository URL</strong>: a URL do repositório que você fez o Fork no GitHub</p></li>
+<li><p><strong>Project directory name</strong>: o nome da pasta que será criada no seu computador para armazenar o repositório. Geralmente o RStudio preenche esse campo automaticamente.</p></li>
+<li><p><strong>Create project as subdirectory of</strong>: o caminho para a pasta onde você quer que o repositório seja clonado. Você pode clicar em “Browse” para facilitar a escolha.</p></li>
+</ul>
+<p>Após preencher os campos, clique em <strong>Create Project</strong>. O projeto será clonado para o seu computador, e isso pode demorar um pouco. Após ser clonado, o projeto do RStudio contendo os códigos do repositório será aberto.</p>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -510,8 +525,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./repo-local-rstudio.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o repositório local</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./traduzindo-rstudio.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

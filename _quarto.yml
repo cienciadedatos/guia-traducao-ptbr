@@ -23,7 +23,7 @@ book:
       - git-github.qmd
       - setup-traducao.qmd
       - ambiente-local-rstudio.qmd
-      - repo-local-rstudio.qmd
+      - traduzindo-rstudio.qmd
     - part: "Traduções realizadas no Weblate"
       chapters:  
       - weblate.qmd
