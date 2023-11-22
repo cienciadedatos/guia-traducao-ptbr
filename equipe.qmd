@@ -1,0 +1,37 @@
+# Equipes de tradução 
+
+A seguir, apresentamos as equipes de tradução que estão atuando nos projetos de tradução colaborativa que utilizam esse guia.
+
+## Livro R for Data Science (R4DS)
+
+O  [projeto de tradução colaborativa](https://github.com/cienciadedatos/pt-r4ds/wiki) do livro [R for Data Science](https://r4ds.had.co.nz/) (R4DS) para Português Brasileiro (PT-BR) é coordenado por [Beatriz Milz](https://github.com/beatrizmilz).
+
+É importante citar que [Riva Quiroga](https://github.com/rivaquiroga) é a gestora da tradução do livro em Espanhol, e auxiliou na estruturação do projeto de tradução colaborativa para PT-BR.
+
+
+A equipe de tradução é composta por:
+
+```{r}
+#| message: false
+#| echo: false
+readr::read_csv("equipe-traducao-r4ds.csv") |>
+  dplyr::arrange(nome) |> 
+  dplyr::mutate(
+    github = glue::glue("<a href='https://github.com/{github}' target='_blank'>@{github}</a>")) |> 
+  reactable::reactable(pagination = FALSE, 
+                       searchable = TRUE,
+                       columns = list(
+                         nome = reactable::colDef(
+                           minWidth = 200, 
+                           name = "Nome"
+                         ),
+                         github = reactable::colDef(
+                           minWidth = 200,
+                           name = "GitHub",
+                           html = TRUE
+                         )
+                       ))
+```
+
+
+

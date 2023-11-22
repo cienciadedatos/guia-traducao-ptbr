@@ -16,6 +16,7 @@ book:
   search: true
   chapters:
     - index.qmd
+    - equipe.qmd
     - dados.qmd
     - orientacoes.qmd
           
