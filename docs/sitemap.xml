@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/index.html</loc>
-    <lastmod>2023-11-17T00:59:50.794Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.011Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/equipe.html</loc>
+    <lastmod>2023-11-22T00:33:06.014Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/dados.html</loc>
-    <lastmod>2023-11-17T00:59:50.797Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.018Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/orientacoes.html</loc>
-    <lastmod>2023-11-17T00:59:50.802Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.024Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/git-github.html</loc>
-    <lastmod>2023-11-17T00:59:50.806Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.029Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/revisando-github.html</loc>
-    <lastmod>2023-11-17T00:59:50.810Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.033Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/setup-traducao.html</loc>
-    <lastmod>2023-11-17T00:59:50.813Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.036Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/ambiente-local-rstudio.html</loc>
-    <lastmod>2023-11-17T00:59:50.819Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.040Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/traduzindo-rstudio.html</loc>
-    <lastmod>2023-11-17T00:59:50.824Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.045Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/incorporando-revisao.html</loc>
-    <lastmod>2023-11-17T00:59:50.826Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.048Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/weblate.html</loc>
-    <lastmod>2023-11-17T00:59:50.829Z</lastmod>
+    <lastmod>2023-11-22T00:33:06.050Z</lastmod>
   </url>
 </urlset>

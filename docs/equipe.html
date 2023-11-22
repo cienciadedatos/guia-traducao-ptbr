@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.450">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 8&nbsp; Configurando o ambiente local com o RStudio</title>
+<title>Guia de Tradução de conteúdos técnicos sobre R para Português Brasileiro - 2&nbsp; Equipes de tradução</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,40 +17,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -60,8 +26,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./traduzindo-rstudio.html" rel="next">
-<link href="./setup-traducao.html" rel="prev">
+<link href="./dados.html" rel="next">
+<link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -89,7 +55,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Enviar",
     "search-label": "Procurar"
   }
-}</script>
+}</script><script src="site_libs/core-js-2.5.3/shim.min.js"></script><script src="site_libs/react-18.2.0/react.min.js"></script><script src="site_libs/react-18.2.0/react-dom.min.js"></script><script src="site_libs/reactwidget-1.0.0/react-tools.js"></script><script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script><link href="site_libs/reactable-0.4.4/reactable.css" rel="stylesheet">
+<script src="site_libs/reactable-binding-0.4.4/reactable.js"></script>
 </head>
 <body class="nav-sidebar floating">
 
@@ -98,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-github.html">Traduzindo via GitHub</a></li><li class="breadcrumb-item"><a href="./ambiente-local-rstudio.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./equipe.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Equipes de tradução</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,7 +97,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./equipe.html" class="sidebar-item-text sidebar-link">
+  <a href="./equipe.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Equipes de tradução</span></span></a>
   </div>
 </li>
@@ -175,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ambiente-local-rstudio.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ambiente-local-rstudio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></span></a>
   </div>
 </li>
@@ -218,14 +185,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Índice</h2>
    
   <ul>
-<li><a href="#conectando-o-rstudio-e-o-github" id="toc-conectando-o-rstudio-e-o-github" class="nav-link active" data-scroll-target="#conectando-o-rstudio-e-o-github"><span class="header-section-number">8.1</span> Conectando o RStudio e o GitHub</a></li>
-  <li><a href="#clonando-o-reposit%C3%B3rio" id="toc-clonando-o-repositório" class="nav-link" data-scroll-target="#clonando-o-reposit%C3%B3rio"><span class="header-section-number">8.2</span> Clonando o repositório</a></li>
-  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/ambiente-local-rstudio.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
+<li><a href="#livro-r-for-data-science-r4ds" id="toc-livro-r-for-data-science-r4ds" class="nav-link active" data-scroll-target="#livro-r-for-data-science-r4ds"><span class="header-section-number">2.1</span> Livro R for Data Science (R4DS)</a></li>
+  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/edit/main/equipe.qmd" class="toc-action">Editar essa página</a></p><p><a href="https://github.com/cienciadedatos/guia-traducao-ptbr/issues/new" class="toc-action">Criar uma issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">
-<span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span>
+<span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Equipes de tradução</span>
 </h1>
 </div>
 
@@ -239,70 +205,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-</header><p>Para seguir o passo a passo utilizando o RStudio, é necessário que você tenha instalado o R e o RStudio Desktop no seu computador. Caso você não tenha instalado, você pode fazer download em: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
-<section id="conectando-o-rstudio-e-o-github" class="level2" data-number="8.1"><h2 data-number="8.1" class="anchored" data-anchor-id="conectando-o-rstudio-e-o-github">
-<span class="header-section-number">8.1</span> Conectando o RStudio e o GitHub</h2>
-<p>O pacote usethis será muito útil nesta etapa. Portanto, instale-o e carregue-o:</p>
+</header><p>A seguir, apresentamos as equipes de tradução que estão atuando nos projetos de tradução colaborativa que utilizam esse guia.</p>
+<section id="livro-r-for-data-science-r4ds" class="level2" data-number="2.1"><h2 data-number="2.1" class="anchored" data-anchor-id="livro-r-for-data-science-r4ds">
+<span class="header-section-number">2.1</span> Livro R for Data Science (R4DS)</h2>
+<p>O <a href="https://github.com/cienciadedatos/pt-r4ds/wiki">projeto de tradução colaborativa</a> do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a> (R4DS) para Português Brasileiro (PT-BR) é coordenado por <a href="https://github.com/beatrizmilz">Beatriz Milz</a>.</p>
+<p>É importante citar que <a href="https://github.com/rivaquiroga">Riva Quiroga</a> é a gestora da tradução do livro em Espanhol, e auxiliou na estruturação do projeto de tradução colaborativa para PT-BR.</p>
+<p>A equipe de tradução é composta por:</p>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"usethis"</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://usethis.r-lib.org">usethis</a></span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div class="reactable html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-a25e510f989ef8ce35e6" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a25e510f989ef8ce35e6">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"nome":["Alberson Miranda","Ariana Cabral","Arthur C. Silva","Beatriz Milz","Bruno Mioto","Eric Scopinho","Fernanda Fiel Peres","Halian Vilela","Lígia Louzada","Marcus Ramalho","Maximilian Canez Fernandes"],"github":["<a href='https://github.com/albersonmiranda' target='_blank'>@albersonmiranda<\/a>","<a href='https://github.com/arianacabral' target='_blank'>@arianacabral<\/a>","<a href='https://github.com/decarvaa' target='_blank'>@decarvaa<\/a>","<a href='https://github.com/beatrizmilz' target='_blank'>@beatrizmilz<\/a>","<a href='https://github.com/brunomioto' target='_blank'>@brunomioto<\/a>","<a href='https://github.com/scopinho' target='_blank'>@scopinho<\/a>","<a href='https://github.com/fernandaperes' target='_blank'>@fernandaperes<\/a>","<a href='https://github.com/halian-vilela' target='_blank'>@halian-vilela<\/a>","<a href='https://github.com/ligialouzada' target='_blank'>@ligialouzada<\/a>","<a href='https://github.com/nextmarte' target='_blank'>@nextmarte<\/a>","<a href='https://github.com/MaximilianCF' target='_blank'>@MaximilianCF<\/a>"]},"columns":[{"id":"nome","name":"Nome","type":"character","minWidth":200},{"id":"github","name":"GitHub","type":["glue","character"],"html":true,"minWidth":200}],"searchable":true,"pagination":false,"dataKey":"ffcac9dfb4a0ea7bfacd32110facf1e1"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
-<p>Se apresente para o Git, utilizando a função <code><a href="https://usethis.r-lib.org/reference/use_git_config.html">use_git_config()</a></code>:</p>
-<div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_git_config.html">use_git_config</a></span><span class="op">(</span></span>
-<span>  <span class="co"># seu nome</span></span>
-<span>  user.name <span class="op">=</span> <span class="st">"Carol Denvers"</span>,</span>
-<span>  <span class="co"># o email que você usa na sua conta do GitHub</span></span>
-<span>  user.email <span class="op">=</span> <span class="st">"awesomecaptainmarvel@gmail.com"</span></span>
-<span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Crie um GitHub PAT Token (similar à uma senha) utilizando a função <code><a href="https://usethis.r-lib.org/reference/github-token.html">create_github_token()</a></code>.</p>
-<div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/github-token.html">create_github_token</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Nessa etapa, uma janela do navegador será aberta para você fazer login na sua conta do GitHub e criar o token. Não é necessário alterar as configurações, mas recomendamos nomear o token, e escolher um tempo para que ele expire.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="images/create-github-token.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página para criar um GitHub Token"></p>
-<figcaption class="figure-caption">Página para criar um GitHub Token</figcaption></figure>
-</div>
-<p>Clique em “Generate Token” e copie o token gerado:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="images/copiar-token-gerado.png" class="img-fluid figure-img" style="width:95.0%" alt="Captura de tela: Página que mostra o token gerado"></p>
-<figcaption class="figure-caption">Página que mostra o token gerado</figcaption></figure>
-</div>
-<p>Volte para o RStudio. Utilize a função <code><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds::gitcreds_set()</a></code> para armazenar o seu novo token, colando o token gerado quando for solicitado.</p>
-<div class="cell">
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">gitcreds</span><span class="fu">::</span><span class="fu"><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html">gitcreds_set</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Reinicie a sua sessão do RStudio (o atalho <code>CTRL + SHIFT + F10</code> pode ser útil, ou clique no menu superior em: Session -&gt; Restart R).</p>
-<p>Utilize a função <code><a href="https://usethis.r-lib.org/reference/git_sitrep.html">usethis::git_sitrep()</a></code> para verificar se o seu nome, email e PAT estão configurados corretamente.</p>
-<div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/git_sitrep.html">git_sitrep</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Git config (global)</span></span>
-<span><span class="co">#&gt; ● Name: 'SEU NOME DEVE APARECER AQUI'</span></span>
-<span><span class="co">#&gt; ● Email: 'SEU EMAIL DEVE APARECER AQUI'</span></span>
-<span><span class="co">#&gt; GitHub</span></span>
-<span><span class="co">#&gt; ● Default GitHub host: 'https://github.com'</span></span>
-<span><span class="co">#&gt; ● Personal access token for 'https://github.com': '&lt;discovered&gt;'</span></span>
-<span><span class="co">#&gt; ● GitHub user: 'SEU NOME DE USUÁRIO(A) DEVE APARECER AQUI'</span></span>
-<span><span class="co">#&gt; ● Token scopes: 'gist, repo, user, workflow'</span></span>
-<span><span class="co">#&gt; ● Email(s): 'SEU EMAIL DEVE APARECER AQUI'</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>O mais importante é verificar se aparece: <code>Personal access token for 'https://github.com': '&lt;discovered&gt;'</code>. Caso não esteja, verifique se você copiou o token corretamente, e se você reiniciou a sessão do RStudio.</p>
-</section><section id="clonando-o-repositório" class="level2" data-number="8.2"><h2 data-number="8.2" class="anchored" data-anchor-id="clonando-o-repositório">
-<span class="header-section-number">8.2</span> Clonando o repositório</h2>
-<p>Agora precisamos <strong>clonar</strong> o repositório, fazendo uma cópia do repositório que está na sua conta do GitHub para o seu computador.</p>
-<p>Para isso, primeiramente abra no navegador o repositório que você fez o Fork no GitHub. A URL deverá ser algo similar à:</p>
-<p><code>https://github.com/seu-usuario/nome-repositorio-traducao</code></p>
-<p>Copie essa URL, e volte ao RStudio!</p>
-<p>No RStudio, crie um novo projeto, utilizando o menu superior: <strong>File -&gt; New Project -&gt; Version Control -&gt; Git</strong>.</p>
-<p><img src="images/new-project.png" class="img-fluid" style="width:95.0%" data-fig-align="center" alt="Captura de tela: RStudio new project from Git"> Nesta etapa, você deverá preencher os seguintes campos:</p>
-<ul>
-<li><p><strong>Repository URL</strong>: a URL do repositório que você fez o Fork no GitHub</p></li>
-<li><p><strong>Project directory name</strong>: o nome da pasta que será criada no seu computador para armazenar o repositório. Geralmente o RStudio preenche esse campo automaticamente.</p></li>
-<li><p><strong>Create project as subdirectory of</strong>: o caminho para a pasta onde você quer que o repositório seja clonado. Você pode clicar em “Browse” para facilitar a escolha.</p></li>
-</ul>
-<p>Após preencher os campos, clique em <strong>Create Project</strong>. O projeto será clonado para o seu computador, e isso pode demorar um pouco. Após ser clonado, o projeto do RStudio contendo os códigos do repositório será aberto.</p>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -538,13 +453,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./setup-traducao.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></span>
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./traduzindo-rstudio.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./dados.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bases de dados</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

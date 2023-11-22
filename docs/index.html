@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dados.html" rel="next">
+<link href="./equipe.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -111,14 +111,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./equipe.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Equipes de tradução</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./dados.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bases de dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bases de dados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./orientacoes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Orientações para tradução</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -133,37 +139,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Conceitos importantes sobre Git e GitHub</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conceitos importantes sobre Git e GitHub</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./revisando-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Revisando via GitHub</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Revisando via GitHub</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setup-traducao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Preparando o GitHub para realizar a tradução</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ambiente-local-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Configurando o ambiente local com o RStudio</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./traduzindo-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Traduzindo um capítulo</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./incorporando-revisao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Incorporando as sugestões da revisão no capítulo traduzido</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Incorporando as sugestões da revisão no capítulo traduzido</span></span></a>
   </div>
 </li>
       </ul>
@@ -180,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./weblate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Weblate</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Weblate</span></span></a>
   </div>
 </li>
       </ul>
@@ -236,8 +242,8 @@ ul.task-list li input[type="checkbox"] {
 <h1 data-number="1"><span class="header-section-number">1</span> Introdução</h1>
 <p>Boas vindas!</p>
 <p>Este guia tem como objetivo descrever instruções para as pessoas que desejam contribuir com a tradução de conteúdos técnicos sobre R para Português Brasileiro (PT-BR).</p>
-<p>Este guia está sendo desenvolvido para ser utilizado no <a href="https://github.com/cienciadedatos/pt-r4ds/wiki">projeto de tradução colaborativa</a> do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a> para Português Brasileiro (PT-BR). Porém, esperamos que este guia seja útil para outros projetos de tradução de conteúdos técnicos sobre R para PT-BR.</p>
-<p>Este guia foi inspirado no <em><a href="https://github.com/cienciadedatos/documentacion-traduccion-r4ds">Proyecto de traducción colaborativa de “R para Ciencia de Datos”</a></em>, elaborado pela equipe que realizou a tradução da primeira edição do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a> para Espanhol.</p>
+<p>Este guia está sendo desenvolvido para ser utilizado no <a href="https://github.com/cienciadedatos/pt-r4ds/wiki">projeto de tradução colaborativa</a> do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a> (R4DS) para Português Brasileiro (PT-BR). Porém, esperamos que este guia seja útil para outros projetos de tradução de conteúdos técnicos sobre R para PT-BR.</p>
+<p>Este guia foi inspirado no <a href="https://github.com/cienciadedatos/documentacion-traduccion-r4ds"><em>Proyecto de traducción colaborativa de “R para Ciencia de Datos”</em></a>, elaborado pela equipe que realizou a tradução da primeira edição do livro <a href="https://r4ds.had.co.nz/">R for Data Science</a> para Espanhol.</p>
 <p>Outro guia importante para a tradução de conteúdos técnicos sobre R para PT-BR é o <a href="https://contributor.r-project.org/translations/Conventions_for_Languages/Brazilian%E2%80%90Portugese-specific-translations.html#glossary">Guia de tradução do R Base</a>.</p>
 
 
@@ -481,8 +487,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./dados.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bases de dados</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./equipe.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Equipes de tradução</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
