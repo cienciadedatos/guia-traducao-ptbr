@@ -46,6 +46,11 @@
 | aesthetic       | atributos estéticos (*aesthetic*)         |
 | missing values  | valores faltantes (*missing values*)      |
 | autocomplete    | recurso de autocompletar (*autocomplete*) |
+| join            | união (*join*)                            |
+| path            | caminho (*path*)                          |
+| tidy            | organizado (*tidy*)                       |
+| web scraping    | raspagem de dados (*web scraping*)        |
+| nested          | aninhado/anihada (*nested*)               |
 
 -   Ao citar um Painel do RStudio, deixar como "Painel tal (*nome do painel em inglês*)". Assim facilita quando a pessoa for usar o RStudio, pois a IDE não é traduzida. Ex: painel ambiente (*Environment*).
 
@@ -56,27 +61,32 @@
 
 -   Para padronizar a tradução, é importante acordar sobre alguns termos. A lista a seguir será ampliada conforme a tradução for avançando:
 
-| Termo em inglês                                         | Exemplo traduzido    |
-|--------------------------------------------------|----------------------|
-| aesthetics                                              | atributos estéticos  |
-| binwidth                                                | largura de intervalo |
-| code style                                              | estilo de código     |
-| command palette                                         | paleta de comando    |
-| labels                                                  | rótulos              |
-| mapping                                                 | mapeamento           |
-| geometrical object                                      | geometria            |
-| the geom                                                | a geometria          |
-| reproducible                                            | reprodutível         |
-| scaling                                                 | dimensionamento      |
-| the whole game (trata-se do nome de uma parte do livro) | visão geral          |
-| workflow                                                | fluxo de trabalho    |
+| Termo em inglês                                         | Exemplo traduzido        |
+|---------------------------------------------------------|--------------------------|
+| aesthetics                                              | atributos estéticos      |
+| binwidth                                                | largura de intervalo     |
+| code style                                              | estilo de código         |
+| command palette                                         | paleta de comando        |
+| labels                                                  | rótulos                  |
+| mapping                                                 | mapeamento               |
+| geometrical object                                      | geometria                |
+| the geom                                                | a geometria              |
+| reproducible                                            | reprodutível             |
+| scaling                                                 | dimensionamento          |
+| the whole game (trata-se do nome de uma parte do livro) | visão geral              |
+| workflow                                                | fluxo de trabalho        |
+| rectangling                                             | representação retangular |
+| query                                                   | consulta                 |
+
 
 -   Existem termos que não traduzimos, mas devem ser deixados em itálico:
 
-| Termo em inglês | Exemplo traduzido |
-|-----------------|-------------------|
-| pipe            | o/um *pipe*       |
-| pipeline        | o/um *pipeline*   |
-| data frame      | o/um *data frame* |
+| Termo em inglês     | Exemplo traduzido    |
+|---------------------|----------------------|
+| pipe                | o/um *pipe*          |
+| pipeline            | o/um *pipeline*      |
+| data frame          | o/um *data frame*    |
+| list column         | a/uma *list-column*  |
+| backend             | o/um *backend*       | 
 
 -   Preserve sempre que possível as siglas e termos no original também, pois isso ajuda muito quem está lendo a entender não apenas a origem, como também como são usados alguns termos de forma mais abrangente (pense no caso de buscas no google para conteúdos semelhantes/complementares). **(COLOCAR EXEMPLOS)**
