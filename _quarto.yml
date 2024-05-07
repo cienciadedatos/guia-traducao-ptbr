@@ -17,6 +17,7 @@ book:
   chapters:
     - index.qmd
     - equipe.qmd
+    - participe.qmd
     - dados.qmd
     - orientacoes.qmd
           
