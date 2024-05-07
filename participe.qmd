@@ -2,23 +2,21 @@
 
 ## Livro R for Data Science (R4DS)
 
-
-
 O [projeto de tradução colaborativa](https://github.com/cienciadedatos/pt-r4ds/wiki) do livro [R for Data Science](https://r4ds.had.co.nz/) (R4DS) para Português Brasileiro (PT-BR) é coordenado por [Beatriz Milz](https://github.com/beatrizmilz).
 
 Todos os capítulos estão traduzidos, e atualmente estão em fase de revisão.
 
 Caso queira contribuir com a revisão de algum capítulo, recomendamos que leia [a página do guia sobre a revisão no GitHub](revisando-github.qmd).
 
-Caso necessário, envie um email para a coordenadora da tradução - Beatriz Milz: [milz.bea@gmail.com](mailto:milz.bea@gmail.com).
+Caso necessário, envie um email para a coordenadora da tradução - Beatriz Milz: [milz.bea\@gmail.com](mailto:milz.bea@gmail.com).
 
 ### Capítulos que necessitam de revisão
 
 > Atualizado em 07/05/2024.
 
-- Seção: Seção do livro, em inglês.
-- Capítulo: Nome original do arquivo.
-- URL PR: acesso à Pull Request no GitHub. Por aqui, é possível realizar a revisão do capítulo.
+-   Seção: Seção do livro, em inglês.
+-   Capítulo: Nome original do arquivo.
+-   URL PR: acesso à Pull Request no GitHub. Por aqui, é possível realizar a revisão do capítulo.
 
 ```{r}
 #| message: false
@@ -51,5 +49,3 @@ readr::read_csv("traducao-r4ds.csv") |>
   )
 
 ```
-
-
