@@ -331,14 +331,47 @@
     ]
   },
   {
+    "objectID": "sugerindo-correcoes.html",
+    "href": "sugerindo-correcoes.html",
+    "title": "12  Sugerindo correções",
+    "section": "",
+    "text": "12.1 1) Crie um Pull Request (PR)\nSe você sabe como criar um Pull Request, você pode fazer isso diretamente no repositório do projeto. Essa é a forma mais rápida e eficiente de sugerir correções.\nNo caso do livro R4DS, a branch utilizada para a tradução é a traducao-pt-2ed. Nessa branch, é possível visualizar os arquivos.\nPara sugerir correções, você primeiro precisa identificar qual arquivo deseja corrigir. O nome do arquivo pode ser encontrado a partir do link da página do livro. Por exemplo: https://cienciadedatos.github.io/pt-r4ds/data-visualize.html corresponde ao arquivo data-visualize.qmd.\nApós identificar o arquivo que deseja corrigir, você precisa abrir o mesmo. No caso do exemplo acima, o link é https://github.com/cienciadedatos/pt-r4ds/blob/traducao-pt-2ed/data-visualize.qmd.\nEm seguida, você pode clicar no arquivo que deseja corrigir, clicar no ícone de lápis (Edit this file), fazer as sugestões necessárias e, em seguida, salvar. O GitHub irá indicar que você pode criar um Pull Request.",
+    "crumbs": [
+      "Traduzindo via GitHub",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sugerindo correções</span>"
+    ]
+  },
+  {
+    "objectID": "sugerindo-correcoes.html#crie-uma-issue",
+    "href": "sugerindo-correcoes.html#crie-uma-issue",
+    "title": "12  Sugerindo correções",
+    "section": "12.2 2) Crie uma Issue",
+    "text": "12.2 2) Crie uma Issue\nSe você não sabe como criar um Pull Request, você pode criar uma Issue. Para isso, você pode clicar na aba “Issues” no repositório do projeto e, em seguida, clicar no botão “New Issue”.",
+    "crumbs": [
+      "Traduzindo via GitHub",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sugerindo correções</span>"
+    ]
+  },
+  {
+    "objectID": "sugerindo-correcoes.html#envie-um-e-mail",
+    "href": "sugerindo-correcoes.html#envie-um-e-mail",
+    "title": "12  Sugerindo correções",
+    "section": "12.3 3) Envie um e-mail",
+    "text": "12.3 3) Envie um e-mail\nCaso você não utilize GitHub, você pode enviar um e-mail para a pessoa responsável pela tradução. É possível verificar isso na página sobre as equipes de tradução.",
+    "crumbs": [
+      "Traduzindo via GitHub",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Sugerindo correções</span>"
+    ]
+  },
+  {
     "objectID": "weblate.html",
     "href": "weblate.html",
-    "title": "12  Weblate",
+    "title": "13  Weblate",
     "section": "",
     "text": "O Weblate é a plataforma que é utilizada na tradução dos outputs (como mensagens de erro, warnings, etc) do R base.\nEle é uma plataforma de tradução online, que permite que várias pessoas trabalhem em conjunto na tradução de um projeto.\nFuturamente, adicionaremos conteúdo sobre como contribuir com a tradução do R base utilizando o Weblate.",
     "crumbs": [
       "Traduzindo via Weblate",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Weblate</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Weblate</span>"
     ]
   }
 ]

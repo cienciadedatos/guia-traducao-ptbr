@@ -1,0 +1,28 @@
+# Sugerindo correções
+
+Caso você encontre algum erro ou tenha alguma sugestão de melhoria na tradução, existe 3 formas que você pode contribuir (dependendo do seu nível de familiaridade com o GitHub):
+
+## 1) Crie um Pull Request (PR)
+
+Se você sabe como criar um Pull Request, você pode fazer isso diretamente no repositório do projeto. Essa é a forma mais rápida e eficiente de sugerir correções.
+
+No caso do livro R4DS, a branch utilizada para a tradução é a [`traducao-pt-2ed`](https://github.com/cienciadedatos/pt-r4ds/tree/traducao-pt-2ed). Nessa branch, é possível visualizar os arquivos. 
+
+Para sugerir correções, você primeiro precisa identificar qual arquivo deseja corrigir. O nome do arquivo pode ser encontrado a partir do link da página do livro. Por exemplo: <https://cienciadedatos.github.io/pt-r4ds/data-visualize.html> corresponde ao arquivo `data-visualize.qmd`.
+
+Após identificar o arquivo que deseja corrigir, você precisa abrir o mesmo. No caso do exemplo acima, o link é <https://github.com/cienciadedatos/pt-r4ds/blob/traducao-pt-2ed/data-visualize.qmd>. 
+
+Em seguida, você pode clicar no arquivo que deseja corrigir, clicar no ícone de lápis (Edit this file), fazer as sugestões necessárias e, em seguida, salvar. O GitHub irá indicar que você pode criar um Pull Request. 
+
+## 2) Crie uma Issue
+
+Se você não sabe como criar um Pull Request, você pode criar uma Issue. Para isso, você pode clicar na aba "Issues" no repositório do projeto e, em seguida, clicar no botão "New Issue".
+
+## 3) Envie um e-mail
+
+Caso você não utilize GitHub, você pode enviar um e-mail para a pessoa responsável pela tradução. É possível verificar isso na [página sobre as equipes de tradução](equipe.qmd).
+
+
+
+
+

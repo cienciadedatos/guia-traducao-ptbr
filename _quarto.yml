@@ -29,12 +29,12 @@ book:
       - ambiente-local-rstudio.qmd
       - traduzindo-rstudio.qmd
       - incorporando-revisao.qmd
-      
-
-      
+      - sugerindo-correcoes.qmd
     - part: "Traduzindo via Weblate"
       chapters:  
       - weblate.qmd
+
+      
 
 bibliography: references.bib
 
