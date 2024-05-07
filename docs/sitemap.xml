@@ -2,46 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/index.html</loc>
-    <lastmod>2023-11-24T12:11:01.133Z</lastmod>
+    <lastmod>2023-11-22T00:07:21.580Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/equipe.html</loc>
-    <lastmod>2023-11-24T12:11:01.136Z</lastmod>
+    <lastmod>2024-05-07T01:36:42.197Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/participe.html</loc>
+    <lastmod>2024-05-07T01:16:48.902Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/dados.html</loc>
-    <lastmod>2023-11-24T12:11:01.139Z</lastmod>
+    <lastmod>2023-11-16T14:09:34.235Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/orientacoes.html</loc>
-    <lastmod>2023-11-24T12:11:01.144Z</lastmod>
+    <lastmod>2023-11-24T12:10:12.049Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/git-github.html</loc>
-    <lastmod>2023-11-24T12:11:01.148Z</lastmod>
+    <lastmod>2023-11-16T23:47:15.769Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/revisando-github.html</loc>
-    <lastmod>2023-11-24T12:11:01.153Z</lastmod>
+    <lastmod>2023-11-17T00:56:23.736Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/setup-traducao.html</loc>
-    <lastmod>2023-11-24T12:11:01.157Z</lastmod>
+    <lastmod>2023-11-16T23:32:00.895Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/ambiente-local-rstudio.html</loc>
-    <lastmod>2023-11-24T12:11:01.161Z</lastmod>
+    <lastmod>2023-11-16T23:54:30.474Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/traduzindo-rstudio.html</loc>
-    <lastmod>2023-11-24T12:11:01.166Z</lastmod>
+    <lastmod>2023-11-17T00:27:19.383Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/incorporando-revisao.html</loc>
-    <lastmod>2023-11-24T12:11:01.168Z</lastmod>
+    <lastmod>2023-11-17T00:59:36.668Z</lastmod>
   </url>
   <url>
     <loc>https://cienciadedatos.github.io/guia-traducao-ptbr/weblate.html</loc>
-    <lastmod>2023-11-24T12:11:01.170Z</lastmod>
+    <lastmod>2023-11-16T22:40:12.789Z</lastmod>
   </url>
 </urlset>
