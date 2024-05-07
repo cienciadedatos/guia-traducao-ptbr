@@ -13,9 +13,32 @@ A equipe de tradução é composta por:
 ```{r}
 #| message: false
 #| echo: false
-readr::read_csv("equipe-traducao-r4ds.csv") |>
+#| warning: false
+
+traducao_r4ds <- readr::read_csv("traducao-r4ds.csv")
+
+nomes <- readr::read_csv("contributors.csv")
+
+traducao_r4ds |>
+  tidyr::pivot_longer(
+    cols = -c(secao, ordem, capitulo, n_issue, n_pr),
+    values_to = "github",
+    names_to = "contribuicao"
+  ) |>
+  dplyr::left_join(nomes) |>
+  dplyr::mutate(
+    contribuicao = dplyr::case_when(
+      contribuicao == "traducao" ~ "Tradução",
+      stringr::str_starts(contribuicao, pattern = "revisao") ~ "Revisão"
+    )
+  ) |> 
+  dplyr::filter(!is.na(github), github != "???") |> 
+  dplyr::distinct(nome, github, contribuicao) |> 
+  dplyr::group_by(nome, github) |> 
+  dplyr::arrange(desc(contribuicao)) |> 
+  dplyr::summarise(contribuicao = knitr::combine_words(contribuicao, and = " e ")) |> 
+  dplyr::ungroup() |> 
   dplyr::arrange(nome) |> 
-  dplyr::select(-email) |> 
   dplyr::mutate(
     github = glue::glue("<a href='https://github.com/{github}' target='_blank'>@{github}</a>")) |> 
   reactable::reactable(pagination = FALSE, 
@@ -29,6 +52,10 @@ readr::read_csv("equipe-traducao-r4ds.csv") |>
                            minWidth = 200,
                            name = "GitHub",
                            html = TRUE
+                         ),
+                         contribuicao = reactable::colDef(
+                           minWidth = 200,
+                           name = "Contribuição"
                          )
                        ))
 ```

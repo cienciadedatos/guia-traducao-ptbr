@@ -1,7 +1,7 @@
 # Importar ----
 traducao_r4ds <- readr::read_csv("traducao-r4ds.csv")
 
-nomes <- readr::read_csv("equipe-traducao-r4ds.csv")
+nomes <- readr::read_csv("contributors.csv")
 
 # tratamento e join ------
 traducao_tratado <- traducao_r4ds |>
