@@ -40,8 +40,9 @@ traducao_tratado |>
 traducao_tratado |> 
   dplyr::filter(github != "???", is.na(email) | email == "???") |> 
   dplyr::distinct(github) |> 
-  dplyr::mutate(url_github = paste0("https://github.com/", github)) |> 
-  dplyr::pull(url_github) |> 
+  dplyr::mutate(url_github = paste0("https://github.com/", github),
+                handle = paste0("@", github)) |> 
+  dplyr::pull(handle) |> 
   writeLines()
 
 
