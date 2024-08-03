@@ -9,7 +9,7 @@ ordem,capitulo,secao,n_issue,n_pr,traducao,revisao_1,revisao_2,revisao_3
 8,workflow-style.qmd,Whole game,8,42,nextmarte,beatrizmilz,decarvaa
 9,data-tidy.qmd,Whole game,9,46,halian-vilela,scopinho,beatrizmilz
 10,workflow-scripts.qmd,Whole game,10,86,nextmarte,beatrizmilz,brunomioto
-11,data-import.qmd,Whole game,11,99,albersonmiranda,???,???
+11,data-import.qmd,Whole game,11,99,albersonmiranda,beatrizccolvara,beatrizmilz
 12,workflow-help.qmd,Whole game,12,93,MaximilianCF,beatrizmilz,brunomioto
 13,visualize.qmd,Visualize,13,53,brunomioto,beatrizmilz,scopinho
 14,layers.qmd,Visualize,14,77,fernandaperes,Luaaalex,cesar-galvao
@@ -19,11 +19,11 @@ ordem,capitulo,secao,n_issue,n_pr,traducao,revisao_1,revisao_2,revisao_3
 18,logicals.qmd,Transform,18,64,scopinho,magnotairone,beatrizmilz
 19,numbers.qmd,Transform,19,65,scopinho,carlossb1,beatrizmilz
 20,strings.qmd,Transform,20,79,arianacabral,magnotairone,???
-21,regexps.qmd,Transform,21,66,scopinho,magnotairone,???
+21,regexps.qmd,Transform,21,66,scopinho,magnotairone,cesar-galvao
 22,factors.qmd,Transform,22,67,scopinho,cesar-galvao,arianacabral
 23,datetimes.qmd,Transform,23,68,scopinho,magnotairone,???
 24,missing-values.qmd,Transform,24,scopinho,magnotairone,brunomioto
-25,joins.qmd,Transform,25,70,scopinho,MaximilianCF,???
+25,joins.qmd,Transform,25,70,scopinho,MaximilianCF,debora-s
 26,import.qmd,Import,26,54,scopinho,beatrizmilz,Luaaalex
 27,spreadsheets.qmd,Import,27,58,scopinho,carlossb1,decarvaa
 28,databases.qmd,Import,28,59,scopinho,Luaaalex,beatrizmilz
