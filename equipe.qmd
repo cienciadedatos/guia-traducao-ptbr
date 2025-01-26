@@ -19,13 +19,15 @@ traducao_r4ds <- readr::read_csv("traducao-r4ds.csv")
 
 nomes <- readr::read_csv("contributors.csv")
 
-traducao_r4ds |>
+tabela_unida <- traducao_r4ds |>
   tidyr::pivot_longer(
     cols = -c(secao, ordem, capitulo, n_issue, n_pr),
     values_to = "github",
     names_to = "contribuicao"
   ) |>
-  dplyr::left_join(nomes) |>
+  dplyr::left_join(nomes) 
+
+tabela_final <- tabela_unida |>
   dplyr::mutate(
     contribuicao = dplyr::case_when(
       contribuicao == "traducao" ~ "Tradução",
@@ -33,14 +35,23 @@ traducao_r4ds |>
     )
   ) |> 
   dplyr::filter(!is.na(github), github != "???") |> 
-  dplyr::distinct(nome, github, contribuicao) |> 
+  dplyr::count(nome, github, contribuicao) |>
   dplyr::group_by(nome, github) |> 
   dplyr::arrange(desc(contribuicao)) |> 
-  dplyr::summarise(contribuicao = knitr::combine_words(contribuicao, and = " e ")) |> 
-  dplyr::ungroup() |> 
-  dplyr::arrange(nome) |> 
   dplyr::mutate(
-    github = glue::glue("<a href='https://github.com/{github}' target='_blank'>@{github}</a>")) |> 
+    contribuicao_n = paste0(contribuicao, " (", n,")"),
+  ) |> 
+  dplyr::summarise(contribuicao_n_texto = knitr::combine_words(contribuicao_n, and = " e "),
+                   quant_contr_total = sum(n)) |> 
+  dplyr::ungroup() |>
+  dplyr::mutate(organizacao = github == "beatrizmilz") |> 
+  dplyr::arrange(desc(organizacao), desc(quant_contr_total)) |> 
+  dplyr::mutate(
+    github = glue::glue("<a href='https://github.com/{github}' target='_blank'>@{github}</a>"))
+  
+  
+  tabela_final |>
+    dplyr::select(-organizacao, -quant_contr_total) |>
   reactable::reactable(pagination = FALSE, 
                        searchable = TRUE,
                        columns = list(
@@ -53,7 +64,7 @@ traducao_r4ds |>
                            name = "GitHub",
                            html = TRUE
                          ),
-                         contribuicao = reactable::colDef(
+                         contribuicao_n_texto = reactable::colDef(
                            minWidth = 200,
                            name = "Contribuição"
                          )
